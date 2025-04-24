@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_pv07cCD3EfCf3YcdppMP9A">
+  <interactionFlowModel id="_19t0oCD3EfCf3YcdppMP9A">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_19ytICD3EfCf3YcdppMP9A" name="Home" isXOR="true">
+      <annotations text="/"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_uWT5MCEJEfCT1qq_RmOq_A" name="Blog">
+      <annotations text="Blog"/>
+      <viewElementEvents id="_395eiCEJEfCT1qq_RmOq_A" name="Blog">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_5aq-hyEJEfCT1qq_RmOq_A">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_pv07cSD3EfCf3YcdppMP9A">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_pv6bACD3EfCf3YcdppMP9A" name="CustomerImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_yn6goCCuEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CECD3EfCf3YcdppMP9A" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_Ev8VoCCyEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CESD3EfCf3YcdppMP9A" name="email">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_Tx1AcCCyEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CEiD3EfCf3YcdppMP9A" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_WO0AQCCyEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_pv7CEyD3EfCf3YcdppMP9A" name="BlogImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_g8ru0CDLEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CFCD3EfCf3YcdppMP9A" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_q_45ICDLEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CFSD3EfCf3YcdppMP9A" name="title">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_F7XBECDMEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CFiD3EfCf3YcdppMP9A" name="content">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_MAtOsCDMEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CFyD3EfCf3YcdppMP9A" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_8HQNQCDMEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_pv7CGCD3EfCf3YcdppMP9A" name="BlogImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_LjvJYCDNEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CGSD3EfCf3YcdppMP9A" name="likeCount">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ZbnfMCDNEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CGiD3EfCf3YcdppMP9A" name="blogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_2z-D0CDOEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CGyD3EfCf3YcdppMP9A" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_GdxYUCDREfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_pv7CHCD3EfCf3YcdppMP9A" name="Like">
+      <behavioralFeature xsi:type="uml:Operation" href="../online-ticketing-uml-dop.uml#_3FNaQCDNEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CHSD3EfCf3YcdppMP9A" name="blogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_2z_R8SDOEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_pv7CHiD3EfCf3YcdppMP9A" name="blogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_GeDFICDREfCf3YcdppMP9A"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>
