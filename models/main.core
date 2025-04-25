@@ -12,6 +12,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_CM67ACF9EfCTVfc_I9vAmg" name="Order">
+      <annotations text="Order"/>
+      <viewElementEvents id="_I4NuUCF9EfCTVfc_I9vAmg" name="Order">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_K_zF5yF9EfCTVfc_I9vAmg">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="order.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_pv07cSD3EfCf3YcdppMP9A">
     <domainElements xsi:type="core:UMLDomainConcept" id="_pv6bACD3EfCf3YcdppMP9A" name="CustomerImpl">
