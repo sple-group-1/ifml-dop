@@ -24,6 +24,7 @@
             <subViewComponentParts xsi:type="ext:SimpleField" id="_phX7wCHTEfCBpoLhrKFUVw" name="Checkbox" direction="out">
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_zhDQ8CHTEfCBpoLhrKFUVw" name="checkbox"/>
             </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__fN2oCHUEfCBpoLhrKFUVw" name="Id" featureConcept="//@domainModel/@domainElements.1"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>

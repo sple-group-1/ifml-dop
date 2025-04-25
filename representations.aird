@@ -37,7 +37,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="models/booking.core#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pFwfICHFEfCUwrA_8qrwnA" name="cart" repPath="#_pFmHECHFEfCUwrA_8qrwnA" changeId="1745585790324">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pFwfICHFEfCUwrA_8qrwnA" name="cart" repPath="#_pFmHECHFEfCUwrA_8qrwnA" changeId="1745585945116">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="models/cart.core#/"/>
       </ownedRepresentationDescriptors>
@@ -9768,6 +9768,15 @@
                           <styles xmi:type="notation:ShapeStyle" xmi:id="_pnDtASHTEfCBpoLhrKFUVw" fontName="Segoe UI"/>
                           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pnDtAiHTEfCBpoLhrKFUVw" x="31" y="258" width="350" height="63"/>
                         </children>
+                        <children xmi:type="notation:Node" xmi:id="__p1yQCHUEfCBpoLhrKFUVw" type="3008" element="__ffjcCHUEfCBpoLhrKFUVw">
+                          <children xmi:type="notation:Node" xmi:id="__p3AYCHUEfCBpoLhrKFUVw" type="5005"/>
+                          <children xmi:type="notation:Node" xmi:id="__p3ncCHUEfCBpoLhrKFUVw" type="7002">
+                            <styles xmi:type="notation:SortingStyle" xmi:id="__p3ncSHUEfCBpoLhrKFUVw"/>
+                            <styles xmi:type="notation:FilteringStyle" xmi:id="__p3nciHUEfCBpoLhrKFUVw"/>
+                          </children>
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="__p1yQSHUEfCBpoLhrKFUVw" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__p1yQiHUEfCBpoLhrKFUVw" x="31" y="18" width="289" height="40"/>
+                        </children>
                         <styles xmi:type="notation:SortingStyle" xmi:id="_jerLwSHOEfC7j5ziKZetqQ"/>
                         <styles xmi:type="notation:FilteringStyle" xmi:id="_jerLwiHOEfC7j5ziKZetqQ"/>
                       </children>
@@ -10477,6 +10486,17 @@
                 </ownedStyle>
                 <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@subContainerMappings[name='SubViewComponentPart']"/>
               </ownedDiagramElements>
+            </ownedDiagramElements>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__ffjcCHUEfCBpoLhrKFUVw" name="«VisualizationAttribute»  Id: UUID" tooltipText="VisualizationAttribute Id" width="20" height="4">
+              <target xmi:type="core:VisualizationAttribute" href="models/cart.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.5"/>
+              <semanticElements xmi:type="core:VisualizationAttribute" href="models/cart.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.5"/>
+              <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+              <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+              <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__fgKgCHUEfCBpoLhrKFUVw" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@conditionnalStyles.0/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@subContainerMappings[name='SubViewComponentPart']"/>
             </ownedDiagramElements>
           </ownedDiagramElements>
         </ownedDiagramElements>
