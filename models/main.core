@@ -20,6 +20,10 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3y9OMCHXEfCBpoLhrKFUVw" name="Cart">
+      <annotations text="Cart"/>
+      <viewElementEvents id="_Hj27ICHYEfCBpoLhrKFUVw" name="Cart"/>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_pv07cSD3EfCf3YcdppMP9A">
     <domainElements xsi:type="core:UMLDomainConcept" id="_pv6bACD3EfCf3YcdppMP9A" name="CustomerImpl">
