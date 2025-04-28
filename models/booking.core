@@ -5,8 +5,10 @@
       <parameters id="_ncYP4CGsEfCzcMD1ReU42Q" name="start_date" direction="inout"/>
       <parameters id="_sR50YCGsEfCzcMD1ReU42Q" name="end_date" direction="inout"/>
       <parameters id="_598toCGsEfCzcMD1ReU42Q" name="rooms_count" direction="inout"/>
-      <viewElements xsi:type="core:ViewContainer" id="_E9nI4CGcEfCzcMD1ReU42Q" name="Search Hotel Form Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_E9nI4CGcEfCzcMD1ReU42Q" name="Search Hotel Form Page">
         <annotations text="/hotel"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:Form" id="_3pNeICGcEfCzcMD1ReU42Q" name="Search Hotel Form">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_EL2MYCGqEfCzcMD1ReU42Q" name="Submit">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_JimOoCGqEfCzcMD1ReU42Q"/>

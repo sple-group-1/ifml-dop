@@ -28,6 +28,22 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_-Wzz0CPnEfCETeODqcOJAw" name="Booking">
+      <annotations text="Booking"/>
+      <viewElementEvents id="_AzDMwCPoEfCETeODqcOJAw" name="Booking">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_K2rN1yPoEfCETeODqcOJAw">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="booking.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_SrRLgCPoEfCETeODqcOJAw" name="Wishlist">
+      <annotations text="Wishlist"/>
+      <viewElementEvents id="_VEynoCPoEfCETeODqcOJAw" name="Wishlist">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_dR8PRyPoEfCETeODqcOJAw">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="wishlist.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_pv07cSD3EfCf3YcdppMP9A">
     <domainElements xsi:type="core:UMLDomainConcept" id="_pv6bACD3EfCf3YcdppMP9A" name="CustomerImpl">
