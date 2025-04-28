@@ -2,13 +2,14 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_7IrO0CHBEfCE750xnd-W-Q">
   <interactionFlowModel id="_K7JFMCHGEfCUwrA_8qrwnA">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_xwkdsCHGEfCUwrA_8qrwnA" name="Cart" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@actionEvents.0/@outInteractionFlows.0" isXOR="true">
-      <annotations text="/cart"/>
       <viewElements xsi:type="core:ViewContainer" id="_aP3XACHHEfCUwrA_8qrwnA" name="CartPage">
+        <annotations text="/cart"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:List" id="_x5q54CHHEfCUwrA_8qrwnA" name="ListRow CartItem">
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_zKC7oCHSEfCBpoLhrKFUVw" name="OnSubmit Event">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_5R_xUCHSEfCBpoLhrKFUVw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1"/>
+          <viewElementEvents id="_P3dSACPmEfCETeODqcOJAw" name="Checkout">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_Sf4FwCPmEfCETeODqcOJAw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_jTlWECHOEfC7j5ziKZetqQ" name="Data Binding">
+          <viewComponentParts xsi:type="core:DataBinding" id="_jTlWECHOEfC7j5ziKZetqQ" name="Data Binding" uniformResourceIdentifier="call/cart">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_txk-8CHOEfC7j5ziKZetqQ" name="Quantity">
               <featureConcept href="booking.core#//@domainModel/@domainElements.57"/>
             </subViewComponentParts>

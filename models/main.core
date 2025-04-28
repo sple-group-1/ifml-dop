@@ -20,9 +20,13 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3y9OMCHXEfCBpoLhrKFUVw" name="Cart">
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_UHlKwCPjEfCETeODqcOJAw" name="Cart">
       <annotations text="Cart"/>
-      <viewElementEvents id="_Hj27ICHYEfCBpoLhrKFUVw" name="Cart"/>
+      <viewElementEvents id="_a3y6UCPjEfCETeODqcOJAw" name="Cart">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_j3RWwSPjEfCETeODqcOJAw">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="cart.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_pv07cSD3EfCf3YcdppMP9A">
