@@ -48,7 +48,7 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_HfNbkCGfEfCzcMD1ReU42Q" name="List Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
-        <annotations text="/hotel/search?keyword=:keyword&amp;start_date=:start_date&amp;end_date=:end_date&amp;rooms_count=:rooms_count"/>
+        <annotations text="/hotel/search/keyword/:keyword/start_date/:start_date/end_date/:end_date/rooms_count/:rooms_count"/>
         <parameters id="_ji9HQCGsEfCzcMD1ReU42Q" name="keyword"/>
         <viewElementEvents id="_DTjgMCGvEfCzcMD1ReU42Q" name="back">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_IeD2MCGvEfCzcMD1ReU42Q" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
@@ -63,16 +63,23 @@
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_E1fx4CGgEfCzcMD1ReU42Q" name="List Hotel Data Binding" uniformResourceIdentifier="/hotel/search?keyword=:keyword&amp;start_date=:start_date&amp;end_date=:end_date&amp;rooms_count=:rooms_count">
             <parameters id="_RlQrQCGvEfCzcMD1ReU42Q" name="Id" direction="inout"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_c15aYCGhEfCzcMD1ReU42Q" name="Title"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_JjECUCGiEfCzcMD1ReU42Q" name="Start Price"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_pjhuICGiEfCzcMD1ReU42Q" name="Location"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_c15aYCGhEfCzcMD1ReU42Q" name="Title">
+              <featureConcept href="cart.core#//@domainModel/@domainElements.6"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_JjECUCGiEfCzcMD1ReU42Q" name="Start Price">
+              <featureConcept href="review.core#//@domainModel/@domainElements.35"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_pjhuICGiEfCzcMD1ReU42Q" name="Location">
+              <featureConcept href="cart.core#//@domainModel/@domainElements.41"/>
+            </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_48W5UCGiEfCzcMD1ReU42Q" name="Detail Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/hotel/:id?start_date=:start_date&amp;end_date=:end_date&amp;rooms_count=:rooms_count"/>
+        <annotations text="/hotel/:id/start_date/:start_date/end_date/:end_date/rooms_count/:rooms_count"/>
         <parameters id="_xAE6ECG0EfCzcMD1ReU42Q" name="Id" direction="inout"/>
         <viewElements xsi:type="ext:Details" id="_VEEK4CGjEfCzcMD1ReU42Q" name="Detail Hotel">
+          <parameters id="_hDnF4CZgEfCsuvj-OpH8WA" name="Id" direction="inout"/>
           <viewComponentParts xsi:type="core:DataBinding" id="_bvgvMCGjEfCzcMD1ReU42Q" name="Detail Hotel Data Binding" uniformResourceIdentifier="/hotel/:id">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_I9Q7sCGkEfCzcMD1ReU42Q" name="Title"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_e4IQgCGkEfCzcMD1ReU42Q" name="Images"/>
@@ -82,18 +89,63 @@
         </viewElements>
         <viewElements xsi:type="ext:List" id="_PPkDYCGoEfCzcMD1ReU42Q" name="List Room Options">
           <viewElementEvents id="_K7J40CGxEfCzcMD1ReU42Q" name="Book Room">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_R6zykCGxEfCzcMD1ReU42Q" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_VHR2wCZgEfCsuvj-OpH8WA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3">
+              <parameterBindingGroup id="_q2PdkCZgEfCsuvj-OpH8WA">
+                <parameterBindings id="_urreECZgEfCsuvj-OpH8WA">
+                  <sourceParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                  <targetParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                </parameterBindings>
+                <parameterBindings id="_xghkQCZgEfCsuvj-OpH8WA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewComponentParts.0/@parameters.0"/>
+                <parameterBindings id="_dZnn8CaCEfCsuvj-OpH8WA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.2/@parameters.0"/>
+                <parameterBindings id="_iPg_4CaCEfCsuvj-OpH8WA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.2/@parameters.1"/>
+                <parameterBindings id="_jZQPICaCEfCsuvj-OpH8WA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.2" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.2/@parameters.2"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_aq7TcCGoEfCzcMD1ReU42Q" name="Hotel Room Option List Data Binding">
-            <parameters id="_RkR-YCGwEfCzcMD1ReU42Q" name="Room Id" direction="inout"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_aq7TcCGoEfCzcMD1ReU42Q" name="Hotel Room Option List Data Binding" uniformResourceIdentifier="call/room">
+            <parameters id="_RkR-YCGwEfCzcMD1ReU42Q" name="RoomId" direction="inout"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_pKuk4CGoEfCzcMD1ReU42Q" name="Room Name"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_tcR5oCGoEfCzcMD1ReU42Q" name="Price"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <actions id="_jElzcCGwEfCzcMD1ReU42Q" name="Add as Order" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="POST"/>
-      </actions>
+      <viewElements xsi:type="core:ViewContainer" id="_unqdkCZcEfCsuvj-OpH8WA" name="Hotel Confimation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/hotel/:Id/room/:RoomId/book"/>
+        <viewElementEvents id="_r4FVQCaFEfCsuvj-OpH8WA" name="Place Order"/>
+        <viewElements xsi:type="ext:Details" id="_0v9RgCZcEfCsuvj-OpH8WA" name="Detail Hotel Booking">
+          <parameters id="_lDj30CZhEfCsuvj-OpH8WA" name="Id" direction="inout"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_7FURECZcEfCsuvj-OpH8WA" name="Detail Hotel Booking Data Binding" uniformResourceIdentifier="call/hotel">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_fJMSgCZeEfCsuvj-OpH8WA" name="Title">
+              <featureConcept href="main.core#//@domainModel/@domainElements.6"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_iivg4CZhEfCsuvj-OpH8WA" name="Location">
+              <featureConcept href="order.core#//@domainModel/@domainElements.20"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:Details" id="_ukI2MCZhEfCsuvj-OpH8WA" name="Detail Hotel Room Booking">
+          <parameters id="_1qIBcCZhEfCsuvj-OpH8WA" name="RoomId" direction="inout"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_731g4CZhEfCsuvj-OpH8WA" name="Detail Room Booking Data Binding" uniformResourceIdentifier="call/room">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Eu7dYCZiEfCsuvj-OpH8WA" name="Room Name">
+              <featureConcept href="main.core#//@domainModel/@domainElements.3"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_F5M4ICZiEfCsuvj-OpH8WA" name="Price">
+              <featureConcept href="order.core#//@domainModel/@domainElements.27"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:Details" id="_lT00gCZ5EfCsuvj-OpH8WA" name="Detail Payment">
+          <parameters id="_7h0nECaBEfCsuvj-OpH8WA" name="start_date" direction="inout"/>
+          <parameters id="_8k7C0CaBEfCsuvj-OpH8WA" name="end_date" direction="inout"/>
+          <parameters id="_9mLEcCaBEfCsuvj-OpH8WA" name="rooms_count" direction="inout"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_-r3hMCaBEfCsuvj-OpH8WA" name="Count Amount Data Binding" uniformResourceIdentifier="call/hotel/total">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_7LCCQCaCEfCsuvj-OpH8WA" name="Check-In Date" featureConcept="//@domainModel/@domainElements.58"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_-uDdECaCEfCsuvj-OpH8WA" name="Check-Out Date" featureConcept="//@domainModel/@domainElements.59"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__12yoCaCEfCsuvj-OpH8WA" name="Room Quantity" featureConcept="//@domainModel/@domainElements.57"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_E4lFoCaDEfCsuvj-OpH8WA" name="Total Payment" featureConcept="//@domainModel/@domainElements.54"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_2UdkoSGPEfCzcMD1ReU42Q">
