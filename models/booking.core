@@ -129,7 +129,9 @@
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
-          <viewElementEvents id="_jxfswCdCEfCXGemhMC8nNA" name="Manage Room Option Availability"/>
+          <viewElementEvents id="_jxfswCdCEfCXGemhMC8nNA" name="Manage Room Option Availability">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_cTbmcCdHEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
+          </viewElementEvents>
           <viewElementEvents id="_1BGzYCdCEfCXGemhMC8nNA" name="Update Room Option">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_-5VcwCdCEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7">
               <parameterBindingGroup id="_TRUpkCdDEfCXGemhMC8nNA">
@@ -140,7 +142,7 @@
           <viewElementEvents id="_XVAaECdGEfCXGemhMC8nNA" name="Delete Room Option">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_dGc0QCdGEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.3"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_aq7TcCGoEfCzcMD1ReU42Q" name="Hotel Room Option List Data Binding" uniformResourceIdentifier="call/room">
+          <viewComponentParts xsi:type="core:DataBinding" id="_aq7TcCGoEfCzcMD1ReU42Q" name="Hotel Room Option List Data Binding" uniformResourceIdentifier="call/roomoption/list">
             <parameters id="_RkR-YCGwEfCzcMD1ReU42Q" name="RoomId" direction="inout"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_pKuk4CGoEfCzcMD1ReU42Q" name="Room Name"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_tcR5oCGoEfCzcMD1ReU42Q" name="Price"/>
@@ -229,12 +231,12 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <viewElements xsi:type="core:ViewContainer" id="_Z0S-cCcvEfCXGemhMC8nNA" name="Add Hotel Room Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.1/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_Z0S-cCcvEfCXGemhMC8nNA" name="Add Room Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.1/@outInteractionFlows.0">
         <annotations text="/admin/hotel/:id/room-option/add"/>
         <parameters id="_n9aOMCcvEfCXGemhMC8nNA" name="id" direction="inout">
           <type xsi:type="uml:DataType" href="../online-ticketing-uml-dop.uml#_EWlIgCC0EfCTVfc_I9vAmg"/>
         </parameters>
-        <viewElements xsi:type="ext:Form" id="_ghFmkCcvEfCXGemhMC8nNA" name="Add Hotel Room Option">
+        <viewElements xsi:type="ext:Form" id="_ghFmkCcvEfCXGemhMC8nNA" name="Add Room Option">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_hTmvACc3EfCXGemhMC8nNA" name="Add">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_a5xMMCdEEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.3"/>
           </viewElementEvents>
@@ -277,12 +279,12 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_f3498CdCEfCXGemhMC8nNA" name="Update Room Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.2/@outInteractionFlows.0">
-        <viewElements xsi:type="ext:Form" id="_OyzP0CdDEfCXGemhMC8nNA" name="Form">
+        <viewElements xsi:type="ext:Form" id="_OyzP0CdDEfCXGemhMC8nNA" name="Update Room Option">
           <parameters id="_QseuQCdDEfCXGemhMC8nNA" name="RoomId"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_LYjroCdFEfCXGemhMC8nNA" name="Save">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_V702ECdFEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.4"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_rCSkYCdDEfCXGemhMC8nNA" name="Room Option Data">
+          <viewComponentParts xsi:type="core:DataBinding" id="_rCSkYCdDEfCXGemhMC8nNA" name="Room Option Data" uniformResourceIdentifier="call/roomoption/detail">
             <subViewComponentParts xsi:type="ext:SimpleField" id="_uCwrwCdDEfCXGemhMC8nNA" name="Room Type">
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_29a5oCdDEfCXGemhMC8nNA" name="roomType">
                 <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -294,6 +296,85 @@
                 <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
               </subViewComponentParts>
               <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_Ud1jMCdHEfCXGemhMC8nNA" name="List Room Option Availability Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.1/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.6/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.7/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.8/@actionEvents.0/@outInteractionFlows.0">
+        <parameters id="_eYs0YCdIEfCXGemhMC8nNA" name="RoomId"/>
+        <viewElementEvents id="_0catwCdJEfCXGemhMC8nNA" name="Add Room Option Availability">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_4rogMCdJEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_fH88gCdHEfCXGemhMC8nNA" name="List Room Option Availability">
+          <viewElementEvents id="_Ahr2cCdKEfCXGemhMC8nNA" name="Update Room Option Availability">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_4GvN8CdKEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10"/>
+          </viewElementEvents>
+          <viewElementEvents id="_LwQVwCdMEfCXGemhMC8nNA" name="Delete Room Availability">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_U1nXwCdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.1"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_vc38gCdHEfCXGemhMC8nNA" name="Room Option Availability Data" uniformResourceIdentifier="call/dailyavailability/list">
+            <parameters id="_Y1djYCdKEfCXGemhMC8nNA" name="Id" direction="inout"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_xhRdMCdHEfCXGemhMC8nNA" name="Available">
+              <featureConcept href="review.core#//@domainModel/@domainElements.100"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_HTdXICdIEfCXGemhMC8nNA" name="Quota">
+              <featureConcept href="review.core#//@domainModel/@domainElements.99"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Ozv4wCdIEfCXGemhMC8nNA" name="Date">
+              <featureConcept href="review.core#//@domainModel/@domainElements.102"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_J5NUkCdMEfCXGemhMC8nNA" name="Window" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+          <viewElementEvents id="_Odk3oCdMEfCXGemhMC8nNA" name="Confirm Delete Room Availability">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_XsSC4CdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.8"/>
+          </viewElementEvents>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_ZgST8CdIEfCXGemhMC8nNA" name="Add Room Option Availability Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElementEvents.0/@outInteractionFlows.0">
+        <parameters id="_8yZ9wCdIEfCXGemhMC8nNA" name="RoomId"/>
+        <viewElements xsi:type="ext:Form" id="_wR7fwCdIEfCXGemhMC8nNA" name="Add Room Option Availability">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_BMXVsCdLEfCXGemhMC8nNA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_DxngsCdLEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.6"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_ApztICdJEfCXGemhMC8nNA" name="Available">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_CxhnkCdJEfCXGemhMC8nNA" name="available">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_OM7T4CdJEfCXGemhMC8nNA" name="Quota">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_U9NU4CdJEfCXGemhMC8nNA" name="quota">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_micGMCdJEfCXGemhMC8nNA" name="Date">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_qliIMCdJEfCXGemhMC8nNA" name="date">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_rO5DsCdIEfCXGemhMC8nNA" name="Update Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <viewElements xsi:type="ext:Form" id="_GqFYECdKEfCXGemhMC8nNA" name="Form">
+          <parameters id="_Pc6foCdKEfCXGemhMC8nNA" name="Id"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_CNSnMCdLEfCXGemhMC8nNA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_E7NJgCdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.7"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_QUiEICdKEfCXGemhMC8nNA" name="Room Option Availability Data" uniformResourceIdentifier="call/dailyavailability/detail">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_eDzQgCdKEfCXGemhMC8nNA" name="Available">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_gLofsCdKEfCXGemhMC8nNA" name="available">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_qGat0CdKEfCXGemhMC8nNA" name="Quota">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t9rTQCdKEfCXGemhMC8nNA" name="quota">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
@@ -331,6 +412,21 @@
       <actions id="_5v5g8CdGEfCXGemhMC8nNA" name="Delete Room Option" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.3/@viewElementEvents.0/@outInteractionFlows.0">
         <actionEvents id="_ABjsQCdHEfCXGemhMC8nNA">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_Bv8gsCdHEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+        </actionEvents>
+      </actions>
+      <actions id="_9mI14CdKEfCXGemhMC8nNA" name="Add Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <actionEvents id="_KdW_8CdLEfCXGemhMC8nNA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MSXZwCdLEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
+        </actionEvents>
+      </actions>
+      <actions id="__KiA0CdKEfCXGemhMC8nNA" name="Update Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <actionEvents id="_F7eTsCdMEfCXGemhMC8nNA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_HCbUsCdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
+        </actionEvents>
+      </actions>
+      <actions id="_V_iNMCdMEfCXGemhMC8nNA" name="Delete Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <actionEvents id="_ZEOGMCdMEfCXGemhMC8nNA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_dD6O4CdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
         </actionEvents>
       </actions>
     </interactionFlowModelElements>
