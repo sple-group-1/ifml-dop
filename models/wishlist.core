@@ -21,7 +21,7 @@
           <viewElementEvents id="_Y_yqsCHREfCPR-N52Jh-xg" name="Delete">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_bawRQCHREfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.1/@viewElementEvents.0"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_2h1UoCHDEfCPR-N52Jh-xg" name="List Collections">
+          <viewComponentParts xsi:type="core:DataBinding" id="_2h1UoCHDEfCPR-N52Jh-xg" name="List Collections" uniformResourceIdentifier="call/wishlist">
             <parameters id="_KoqgACHEEfCPR-N52Jh-xg" name="collectionId"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_kXNh0CHEEfCPR-N52Jh-xg" name="title">
               <featureConcept href="main.core#//@domainModel/@domainElements.6"/>
@@ -34,7 +34,7 @@
         <viewElements xsi:type="ext:IFMLWindow" id="_NSL_oCHHEfCPR-N52Jh-xg" name="Delete Collection Confirmation">
           <viewElementEvents id="_iF-XoCHHEfCPR-N52Jh-xg" name="Delete Collection" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_kjos4CHHEfCPR-N52Jh-xg"/>
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_cC7EgCHREfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.4/@actionEvents.0"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_cC7EgCHREfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.4"/>
           </viewElementEvents>
         </viewElements>
       </viewElements>
@@ -51,14 +51,14 @@
           <viewElementEvents id="_-wG2QCHGEfCPR-N52Jh-xg" name="Delete Wishlist">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_WFtDsCHHEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.1"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_O2SsICHGEfCPR-N52Jh-xg" name="List Wishlist">
+          <viewComponentParts xsi:type="core:DataBinding" id="_O2SsICHGEfCPR-N52Jh-xg" name="List Wishlist" uniformResourceIdentifier="call/wishlist/detail">
             <parameters id="_T8_gMCHGEfCPR-N52Jh-xg" name="wishlistId"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Zd_DkCHGEfCPR-N52Jh-xg" name="addedAt" featureConcept="//@domainModel/@domainElements.70"/>
           </viewComponentParts>
         </viewElements>
         <viewElements xsi:type="ext:IFMLWindow" id="_NSL_oCHHEfCPR-N52Jh-xg" name="Delete Wishlist Confirmation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
           <viewElementEvents id="_iF-XoCHHEfCPR-N52Jh-xg" name="Delete Wishlist">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_kjos4CHHEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@actionEvents.0"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_kjos4CHHEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
           </viewElementEvents>
         </viewElements>
       </viewElements>
@@ -69,7 +69,7 @@
         </viewElementEvents>
         <viewElements xsi:type="ext:Form" id="_nw3asCHDEfCPR-N52Jh-xg" name="Add New Collection Form">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_SjxYkCHIEfCPR-N52Jh-xg" name="Add">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_aYhHQCHIEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1/@actionEvents.0"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_aYhHQCHIEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1"/>
           </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_E_q6YCHIEfCPR-N52Jh-xg" name="Title">
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_OPBl4CHIEfCPR-N52Jh-xg" name="title"/>
@@ -83,7 +83,7 @@
         </viewElementEvents>
         <viewElements xsi:type="ext:Form" id="_pN1H8CHDEfCPR-N52Jh-xg" name="Update  Collection Form">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_Ugu_ECHJEfCPR-N52Jh-xg" name="Edit">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_af33ACHJEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2/@actionEvents.0"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_af33ACHJEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2"/>
           </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_GvYIACHJEfCPR-N52Jh-xg" name="Title">
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_HidKwCHJEfCPR-N52Jh-xg" name="title"/>
@@ -97,35 +97,40 @@
         </viewElementEvents>
         <viewElements xsi:type="ext:Form" id="_p1BDwCHDEfCPR-N52Jh-xg" name="Add New Wishlist Form">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_-dB9sCHQEfCPR-N52Jh-xg" name="Add">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_GpYUECHREfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.3/@actionEvents.0"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_GpYUECHREfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.3"/>
           </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_o5K30CHJEfCPR-N52Jh-xg" name="WIshlistId">
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_rjiMUCHJEfCPR-N52Jh-xg" name="wishlistId"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <actions id="_aCBIQCHHEfCPR-N52Jh-xg" name="Delete Wishlist">
-        <actionEvents id="_k-AfQCHIEfCPR-N52Jh-xg" name="then" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+      <actions id="_aCBIQCHHEfCPR-N52Jh-xg" name="Delete Wishlist" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <actionEvents id="_k-AfQCHIEfCPR-N52Jh-xg" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_mFm18CHHEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
         </actionEvents>
       </actions>
-      <actions id="_X4wgQCHIEfCPR-N52Jh-xg" name="Save Collection">
-        <actionEvents id="_tnL7kCHIEfCPR-N52Jh-xg" name="then" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <actions id="_X4wgQCHIEfCPR-N52Jh-xg" name="Save Collection" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_tnL7kCHIEfCPR-N52Jh-xg" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_zX5V8CHIEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
         </actionEvents>
       </actions>
-      <actions id="_RmHBACHJEfCPR-N52Jh-xg" name="Edit Collection">
-        <actionEvents id="_Zm3LYCHJEfCPR-N52Jh-xg" name="then" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <actions id="_RmHBACHJEfCPR-N52Jh-xg" name="Edit Collection" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PATCH"/>
+        <actionEvents id="_Zm3LYCHJEfCPR-N52Jh-xg" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_bTnoICHJEfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
         </actionEvents>
       </actions>
-      <actions id="_BAKo0CHREfCPR-N52Jh-xg" name="Add Wishlist">
-        <actionEvents id="_EHp-MCHREfCPR-N52Jh-xg" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <actions id="_BAKo0CHREfCPR-N52Jh-xg" name="Add Wishlist" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_EHp-MCHREfCPR-N52Jh-xg">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_HW6IcCHREfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
         </actionEvents>
       </actions>
-      <actions id="_aCBIQCHHEfCPR-N52Jh-xg" name="Delete Collection">
-        <actionEvents id="_k-AfQCHIEfCPR-N52Jh-xg" name="then" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.1">
+      <actions id="_aCBIQCHHEfCPR-N52Jh-xg" name="Delete Collection" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.1">
+        <annotations text="DELETE"/>
+        <actionEvents id="_k-AfQCHIEfCPR-N52Jh-xg" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_mFm18CHHEfCPR-N52Jh-xg"/>
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_csgNACHREfCPR-N52Jh-xg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
         </actionEvents>
