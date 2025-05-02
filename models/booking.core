@@ -47,11 +47,14 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <viewElements xsi:type="core:ViewContainer" id="_HfNbkCGfEfCzcMD1ReU42Q" name="List Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
+      <viewElements xsi:type="core:ViewContainer" id="_HfNbkCGfEfCzcMD1ReU42Q" name="List Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.1/@outInteractionFlows.0">
         <annotations text="/hotel/search/keyword/:keyword/start_date/:start_date/end_date/:end_date/rooms_count/:rooms_count"/>
         <parameters id="_ji9HQCGsEfCzcMD1ReU42Q" name="keyword"/>
         <viewElementEvents id="_DTjgMCGvEfCzcMD1ReU42Q" name="back">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_IeD2MCGvEfCzcMD1ReU42Q" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </viewElementEvents>
+        <viewElementEvents id="_qZIbACc1EfCXGemhMC8nNA" name="Add Hotel">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_60goUCc1EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_Q63dsCGfEfCzcMD1ReU42Q" name="ListRow Hotel">
           <viewElementEvents id="_dCFT4CGvEfCzcMD1ReU42Q" name="Detail">
@@ -75,7 +78,7 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <viewElements xsi:type="core:ViewContainer" id="_48W5UCGiEfCzcMD1ReU42Q" name="Detail Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_48W5UCGiEfCzcMD1ReU42Q" name="Detail Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.2/@outInteractionFlows.0">
         <annotations text="/hotel/:id/start_date/:start_date/end_date/:end_date/rooms_count/:rooms_count"/>
         <parameters id="_xAE6ECG0EfCzcMD1ReU42Q" name="Id" direction="inout"/>
         <viewElementEvents id="_r-TNkCcrEfCzxq_FJvr1Rg" name="Review Page">
@@ -89,13 +92,26 @@
             <targetInteractionFlowElement xsi:type="core:ViewContainer" href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
           </outInteractionFlows>
         </viewElementEvents>
+        <viewElementEvents id="_R-kUICc2EfCXGemhMC8nNA" name="Add Room Option">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_T0D2ICc2EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5">
+            <parameterBindingGroup id="_83ohMCc2EfCXGemhMC8nNA">
+              <parameterBindings id="_BC4ZoCc3EfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_VEEK4CGjEfCzcMD1ReU42Q" name="Detail Hotel">
           <parameters id="_hDnF4CZgEfCsuvj-OpH8WA" name="Id" direction="inout"/>
+          <viewElementEvents id="_3C3l4Cc5EfCXGemhMC8nNA" name="Update Hotel">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_4_V5oCc5EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.6"/>
+          </viewElementEvents>
+          <viewElementEvents id="_y4_UgCc7EfCXGemhMC8nNA" name="Delete Hotel">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_KXaGwCc8EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.2"/>
+          </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_bvgvMCGjEfCzcMD1ReU42Q" name="Detail Hotel Data Binding" uniformResourceIdentifier="/hotel/:id">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_I9Q7sCGkEfCzcMD1ReU42Q" name="Title"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_e4IQgCGkEfCzcMD1ReU42Q" name="Images"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_e4IQgCGkEfCzcMD1ReU42Q" name="Image"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_sEHwsCGkEfCzcMD1ReU42Q" name="Location"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_um6dkCGkEfCzcMD1ReU42Q" name="Facilities List"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_um6dkCGkEfCzcMD1ReU42Q" name="Facilities"/>
           </viewComponentParts>
         </viewElements>
         <viewElements xsi:type="ext:List" id="_PPkDYCGoEfCzcMD1ReU42Q" name="List Room Options">
@@ -118,6 +134,12 @@
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_pKuk4CGoEfCzcMD1ReU42Q" name="Room Name"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_tcR5oCGoEfCzcMD1ReU42Q" name="Price"/>
           </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_FYFtECc8EfCXGemhMC8nNA" name="Delete Hotel Confimation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+          <viewElementEvents id="_Urha4Cc8EfCXGemhMC8nNA" name="Confirm Delete Hotel">
+            <annotations text="Danger"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_qYI4UCc8EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1"/>
+          </viewElementEvents>
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_unqdkCZcEfCsuvj-OpH8WA" name="Hotel Confimation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
@@ -157,6 +179,96 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_R5ShoCctEfCXGemhMC8nNA" name="Add Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/admin/hotel/add"/>
+        <viewElements xsi:type="ext:Form" id="_VnwXcCctEfCXGemhMC8nNA" name="Add Hotel">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_TE3SACcvEfCXGemhMC8nNA" name="Add">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_n_nJcCc2EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_gJtTQCctEfCXGemhMC8nNA" name="Title">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_uFhG0CctEfCXGemhMC8nNA" name="title">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="__ByasCctEfCXGemhMC8nNA" name="imageUrl">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_A9WvgCcuEfCXGemhMC8nNA" name="imageUrl">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_QFIm8CcuEfCXGemhMC8nNA" name="Location">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_WbXJMCcuEfCXGemhMC8nNA" name="Location">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_1PVzwCcuEfCXGemhMC8nNA" name="Facilities">
+            <annotations text="Richtext"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_9XyhkCcuEfCXGemhMC8nNA" name="facilities">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_Z0S-cCcvEfCXGemhMC8nNA" name="Add Hotel Room Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/admin/hotel/:id/room-option/add"/>
+        <parameters id="_n9aOMCcvEfCXGemhMC8nNA" name="id" direction="inout">
+          <type xsi:type="uml:DataType" href="../online-ticketing-uml-dop.uml#_EWlIgCC0EfCTVfc_I9vAmg"/>
+        </parameters>
+        <viewElements xsi:type="ext:Form" id="_ghFmkCcvEfCXGemhMC8nNA" name="Add Hotel Room Option">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_hTmvACc3EfCXGemhMC8nNA" name="Add"/>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_8JhiMCcvEfCXGemhMC8nNA" name="Room Type">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Ed5zMCcwEfCXGemhMC8nNA" name="roomType">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_aK1ZsCcwEfCXGemhMC8nNA" name="Price" direction="inout">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_m1aO4CcwEfCXGemhMC8nNA" name="price">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_jNIxkCc5EfCXGemhMC8nNA" name="Update Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/admin/hotel/:id/update"/>
+        <viewElements xsi:type="ext:Form" id="_pxz_gCc5EfCXGemhMC8nNA" name="Update Hotel">
+          <parameters id="_t2TIoCc5EfCXGemhMC8nNA" name="Id" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_D3qmsCc9EfCXGemhMC8nNA" name="OnSubmit Event">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_Bjp8sCc9EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_Jhv8ACc6EfCXGemhMC8nNA" name="Hotel Data">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_OKXs8Cc6EfCXGemhMC8nNA" name="Title">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_SUkcgCc6EfCXGemhMC8nNA" name="title"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_qW9egCc6EfCXGemhMC8nNA" name="Image URL">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_HY1SQCc7EfCXGemhMC8nNA" name="imageUrl"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_ORo9ICc7EfCXGemhMC8nNA" name="Location">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_V9IpMCc7EfCXGemhMC8nNA" name="location"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_gvbHECc7EfCXGemhMC8nNA" name="Facilities">
+              <annotations text="Richtext"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_knzG0Cc7EfCXGemhMC8nNA" name="facilities"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <actions id="_exf0ECc2EfCXGemhMC8nNA" name="Add Hotel" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_yzT8kCc2EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+      </actions>
+      <actions id="_b-tUoCc8EfCXGemhMC8nNA" name="Delete Hotel" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_7iqDkCc8EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+      </actions>
+      <actions id="__4vTACc8EfCXGemhMC8nNA" name="Update Hotel" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="UPDATE"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_JqRegCc9EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+      </actions>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_2UdkoSGPEfCzcMD1ReU42Q">
