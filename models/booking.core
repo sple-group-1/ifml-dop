@@ -130,12 +130,18 @@
             </outInteractionFlows>
           </viewElementEvents>
           <viewElementEvents id="_jxfswCdCEfCXGemhMC8nNA" name="Manage Room Option Availability">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_cTbmcCdHEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_cTbmcCdHEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8">
+              <parameterBindingGroup id="_YVtugCdZEfCXGemhMC8nNA">
+                <parameterBindings id="_avqocCdZEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.1"/>
+                <parameterBindings id="_nu8iUCdZEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
           </viewElementEvents>
           <viewElementEvents id="_1BGzYCdCEfCXGemhMC8nNA" name="Update Room Option">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_-5VcwCdCEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7">
               <parameterBindingGroup id="_TRUpkCdDEfCXGemhMC8nNA">
                 <parameterBindings id="_VaXZsCdDEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.0/@parameters.0"/>
+                <parameterBindings id="_FZETwCdYEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.0/@parameters.1"/>
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
@@ -279,8 +285,10 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_f3498CdCEfCXGemhMC8nNA" name="Update Room Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.2/@outInteractionFlows.0">
+        <annotations text="/admin/hotel/:hotelId/room-option/:roomId"/>
         <viewElements xsi:type="ext:Form" id="_OyzP0CdDEfCXGemhMC8nNA" name="Update Room Option">
-          <parameters id="_QseuQCdDEfCXGemhMC8nNA" name="RoomId"/>
+          <parameters id="_QseuQCdDEfCXGemhMC8nNA" name="roomId"/>
+          <parameters id="_7WD9wCdXEfCXGemhMC8nNA" name="hotelId"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_LYjroCdFEfCXGemhMC8nNA" name="Save">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_V702ECdFEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.4"/>
           </viewElementEvents>
@@ -301,13 +309,26 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_Ud1jMCdHEfCXGemhMC8nNA" name="List Room Option Availability Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.1/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.6/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.7/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.8/@actionEvents.0/@outInteractionFlows.0">
-        <parameters id="_eYs0YCdIEfCXGemhMC8nNA" name="RoomId"/>
+        <annotations text="/admin/hotel/:hotelId/room-option/:roomId/availability"/>
+        <parameters id="_eYs0YCdIEfCXGemhMC8nNA" name="roomId"/>
+        <parameters id="_Ib254CdZEfCXGemhMC8nNA" name="hotelId"/>
         <viewElementEvents id="_0catwCdJEfCXGemhMC8nNA" name="Add Room Option Availability">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_4rogMCdJEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_4rogMCdJEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9">
+            <parameterBindingGroup id="__Q2tcCdZEfCXGemhMC8nNA">
+              <parameterBindings id="_BRdTQCdaEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9/@parameters.1"/>
+              <parameterBindings id="_LXd58CdaEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_fH88gCdHEfCXGemhMC8nNA" name="List Room Option Availability">
           <viewElementEvents id="_Ahr2cCdKEfCXGemhMC8nNA" name="Update Room Option Availability">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_4GvN8CdKEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_4GvN8CdKEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10">
+              <parameterBindingGroup id="_qiNz0CdcEfCXGemhMC8nNA">
+                <parameterBindings id="_sNnlsCdcEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10/@parameters.0"/>
+                <parameterBindings id="_7lXLwCdcEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10/@parameters.1"/>
+                <parameterBindings id="_WoXfECddEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10/@parameters.2"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
           </viewElementEvents>
           <viewElementEvents id="_LwQVwCdMEfCXGemhMC8nNA" name="Delete Room Availability">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_U1nXwCdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.1"/>
@@ -332,7 +353,9 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_ZgST8CdIEfCXGemhMC8nNA" name="Add Room Option Availability Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElementEvents.0/@outInteractionFlows.0">
-        <parameters id="_8yZ9wCdIEfCXGemhMC8nNA" name="RoomId"/>
+        <annotations text="/admin/hotel/:hotelId/room-option/:roomId/availability/add"/>
+        <parameters id="_8yZ9wCdIEfCXGemhMC8nNA" name="roomId"/>
+        <parameters id="_9Ad0oCdYEfCXGemhMC8nNA" name="hotelId" direction="inout"/>
         <viewElements xsi:type="ext:Form" id="_wR7fwCdIEfCXGemhMC8nNA" name="Add Room Option Availability">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_BMXVsCdLEfCXGemhMC8nNA" name="Save">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_DxngsCdLEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.6"/>
@@ -358,6 +381,10 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_rO5DsCdIEfCXGemhMC8nNA" name="Update Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/admin/hotel/:hotelId/room-option/:roomId/availability/:id"/>
+        <parameters id="_QYcV8CdZEfCXGemhMC8nNA" name="hotelId" direction="inout"/>
+        <parameters id="_TuMJwCdZEfCXGemhMC8nNA" name="roomId" direction="inout"/>
+        <parameters id="_R3pM8CdbEfCXGemhMC8nNA" name="Id" direction="inout"/>
         <viewElements xsi:type="ext:Form" id="_GqFYECdKEfCXGemhMC8nNA" name="Form">
           <parameters id="_Pc6foCdKEfCXGemhMC8nNA" name="Id"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_CNSnMCdLEfCXGemhMC8nNA" name="Save">
@@ -394,37 +421,66 @@
       <actions id="__4vTACc8EfCXGemhMC8nNA" name="Update Hotel" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="UPDATE"/>
         <actionEvents id="_-xxKQCdEEfCXGemhMC8nNA" name="then">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_JqRegCc9EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_JqRegCc9EfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+            <parameterBindingGroup id="_QnjFwCdVEfCXGemhMC8nNA">
+              <parameterBindings id="_Tvg8QCdVEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.6/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </actionEvents>
       </actions>
       <actions id="_W8cbACdEEfCXGemhMC8nNA" name="Add Room Option" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
+        <parameters id="_EcieQCdREfCXGemhMC8nNA" name="Id" direction="inout">
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </parameters>
         <actionEvents id="_ByLnQCdFEfCXGemhMC8nNA" name="then">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_gLin0CdEEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_gLin0CdEEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+            <parameterBindingGroup id="_uZWXECdUEfCXGemhMC8nNA">
+              <parameterBindings id="_yPGgoCdUEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </actionEvents>
       </actions>
       <actions id="_I1xl0CdFEfCXGemhMC8nNA" name="Update Room Option" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="UPDATE"/>
         <actionEvents id="_dT7FACdFEfCXGemhMC8nNA">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_fbhDoCdFEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_fbhDoCdFEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+            <parameterBindingGroup id="_W7NU0CdYEfCXGemhMC8nNA">
+              <parameterBindings id="_ZqzHkCdYEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.0/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </actionEvents>
       </actions>
       <actions id="_5v5g8CdGEfCXGemhMC8nNA" name="Delete Room Option" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.3/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
         <actionEvents id="_ABjsQCdHEfCXGemhMC8nNA">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_Bv8gsCdHEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
         </actionEvents>
       </actions>
       <actions id="_9mI14CdKEfCXGemhMC8nNA" name="Add Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
         <actionEvents id="_KdW_8CdLEfCXGemhMC8nNA">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MSXZwCdLEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MSXZwCdLEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8">
+            <parameterBindingGroup id="_-C724CdbEfCXGemhMC8nNA">
+              <parameterBindings id="_CGH_gCdcEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.1"/>
+              <parameterBindings id="_aAef0CdcEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.9/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </actionEvents>
       </actions>
       <actions id="__KiA0CdKEfCXGemhMC8nNA" name="Update Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="UPDATE"/>
         <actionEvents id="_F7eTsCdMEfCXGemhMC8nNA">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_HCbUsCdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_HCbUsCdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8">
+            <parameterBindingGroup id="_tlErYCddEfCXGemhMC8nNA">
+              <parameterBindings id="_wAVz8CddEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.1"/>
+              <parameterBindings id="_5UuJYCddEfCXGemhMC8nNA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.10/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </actionEvents>
       </actions>
       <actions id="_V_iNMCdMEfCXGemhMC8nNA" name="Delete Room Option Availability" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
         <actionEvents id="_ZEOGMCdMEfCXGemhMC8nNA">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_dD6O4CdMEfCXGemhMC8nNA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.8"/>
         </actionEvents>
