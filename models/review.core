@@ -2,11 +2,19 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_SeHEICT3EfCE_JgPrIr5Cw">
   <interactionFlowModel id="_2eUjACT3EfCE_JgPrIr5Cw">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_2eYNYCT3EfCE_JgPrIr5Cw" name="Review" isXOR="true">
-      <inInteractionFlows xsi:type="core:NavigationFlow" href="booking.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
-      <viewElements xsi:type="core:ViewContainer" id="_-TdTQCT3EfCE_JgPrIr5Cw" name="List Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.1 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_-TdTQCT3EfCE_JgPrIr5Cw" name="List Review Page">
         <annotations text="/review/:Id"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.1"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="booking.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElementEvents id="_ZKzEECXzEfCQ4NSrFY_IyQ" name="Add Review">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_diNwQCXzEfCQ4NSrFY_IyQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_diNwQCXzEfCQ4NSrFY_IyQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_65bn8ideEfC8CZ4rB8fV2Q">
+              <parameterBindings id="_7MfG0ideEfC8CZ4rB8fV2Q">
+                <sourceParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+              </parameterBindings>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_whXTECHbEfCYMMX5VlCOuA" name="List Review">
           <viewComponentParts xsi:type="core:DataBinding" id="_9M_w0CHeEfCYMMX5VlCOuA" name="List Review Data Binding" uniformResourceIdentifier="call/review/list">
@@ -19,6 +27,7 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_lmFTcCHqEfCYMMX5VlCOuA" name="Add Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/review/add/:Id"/>
         <viewElementEvents id="_Po6xMCHtEfCYMMX5VlCOuA" name="Back">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_RS0HMCHtEfCYMMX5VlCOuA"/>
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_fAJG0CXzEfCQ4NSrFY_IyQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>

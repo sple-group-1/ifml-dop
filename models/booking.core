@@ -89,7 +89,7 @@
                 <targetParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
               </parameterBindings>
             </parameterBindingGroup>
-            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
           </outInteractionFlows>
         </viewElementEvents>
         <viewElementEvents id="_R-kUICc2EfCXGemhMC8nNA" name="Add Room Option">
