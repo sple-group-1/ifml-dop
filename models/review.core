@@ -2,8 +2,9 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_SeHEICT3EfCE_JgPrIr5Cw">
   <interactionFlowModel id="_2eUjACT3EfCE_JgPrIr5Cw">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_2eYNYCT3EfCE_JgPrIr5Cw" name="Review" isXOR="true">
+      <inInteractionFlows xsi:type="core:NavigationFlow" href="booking.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
       <viewElements xsi:type="core:ViewContainer" id="_-TdTQCT3EfCE_JgPrIr5Cw" name="List Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.1 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@outInteractionFlows.0">
-        <annotations text="/review"/>
+        <annotations text="/review/:Id"/>
         <viewElementEvents id="_ZKzEECXzEfCQ4NSrFY_IyQ" name="Add Review">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_diNwQCXzEfCQ4NSrFY_IyQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
         </viewElementEvents>

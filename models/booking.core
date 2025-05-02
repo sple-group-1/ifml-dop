@@ -78,6 +78,17 @@
       <viewElements xsi:type="core:ViewContainer" id="_48W5UCGiEfCzcMD1ReU42Q" name="Detail Hotel Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/hotel/:id/start_date/:start_date/end_date/:end_date/rooms_count/:rooms_count"/>
         <parameters id="_xAE6ECG0EfCzcMD1ReU42Q" name="Id" direction="inout"/>
+        <viewElementEvents id="_r-TNkCcrEfCzxq_FJvr1Rg" name="Review Page">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_0Ff-MScrEfCzxq_FJvr1Rg">
+            <parameterBindingGroup id="_ItsKMicsEfCzxq_FJvr1Rg">
+              <parameterBindings id="_J_DrcicsEfCzxq_FJvr1Rg">
+                <sourceParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                <targetParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+              </parameterBindings>
+            </parameterBindingGroup>
+            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+          </outInteractionFlows>
+        </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_VEEK4CGjEfCzcMD1ReU42Q" name="Detail Hotel">
           <parameters id="_hDnF4CZgEfCsuvj-OpH8WA" name="Id" direction="inout"/>
           <viewComponentParts xsi:type="core:DataBinding" id="_bvgvMCGjEfCzcMD1ReU42Q" name="Detail Hotel Data Binding" uniformResourceIdentifier="/hotel/:id">
