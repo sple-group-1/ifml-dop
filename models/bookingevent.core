@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_IgmgUClkEfCrcvRIprrAkQ">
+  <domainModel id="_IgmgUSlkEfCrcvRIprrAkQ">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IgyGgClkEfCrcvRIprrAkQ" name="CustomerImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_yn6goCCuEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUoClkEfCrcvRIprrAkQ" name="customerId">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_Ev8VoCCyEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUoSlkEfCrcvRIprrAkQ" name="email">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_Tx1AcCCyEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUoilkEfCrcvRIprrAkQ" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_WO0AQCCyEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IgzUoylkEfCrcvRIprrAkQ" name="BlogImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_g8ru0CDLEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUpClkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_q_45ICDLEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUpSlkEfCrcvRIprrAkQ" name="title">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_F7XBECDMEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUpilkEfCrcvRIprrAkQ" name="content">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_MAtOsCDMEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUpylkEfCrcvRIprrAkQ" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_8HQNQCDMEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IgzUqClkEfCrcvRIprrAkQ" name="BlogImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_LjvJYCDNEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUqSlkEfCrcvRIprrAkQ" name="likeCount">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ZbnfMCDNEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUqilkEfCrcvRIprrAkQ" name="blogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_2z-D0CDOEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUqylkEfCrcvRIprrAkQ" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_GdxYUCDREfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IgzUrClkEfCrcvRIprrAkQ" name="Like">
+      <behavioralFeature xsi:type="uml:Operation" href="../online-ticketing-uml-dop.uml#_3FNaQCDNEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IgzUrSlkEfCrcvRIprrAkQ" name="BookingItemImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_B1HmoCDbEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUrilkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_JVVPwCDbEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUrylkEfCrcvRIprrAkQ" name="bookingType">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_o1l_QCDgEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IgzUsClkEfCrcvRIprrAkQ" name="BookingItemImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_IdMfICDhEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUsSlkEfCrcvRIprrAkQ" name="title">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ZO_BUCDhEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUsilkEfCrcvRIprrAkQ" name="imageUrls">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_jk_L0CDhEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUsylkEfCrcvRIprrAkQ" name="location">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_jJa_QCDjEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUtClkEfCrcvRIprrAkQ" name="facilities">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_z7l78CDjEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUtSlkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_-fBdciDuEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUtilkEfCrcvRIprrAkQ">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_JRwGkiD3EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IgzUtylkEfCrcvRIprrAkQ" name="RoomOptionImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_bFUIcCDvEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUuClkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_vMQokCDvEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUuSlkEfCrcvRIprrAkQ" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_zU9jUCDvEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUuilkEfCrcvRIprrAkQ" name="price">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_-pB4kCDvEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUuylkEfCrcvRIprrAkQ" name="bookingavailabilityimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_8JgNIiHWEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IgzUvClkEfCrcvRIprrAkQ" name="BookingItemImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_U9MzUCDyEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUvSlkEfCrcvRIprrAkQ" name="departureLocation">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_w85_cCDyEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUvilkEfCrcvRIprrAkQ" name="arrivalLocation">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_-uhVMCDyEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUvylkEfCrcvRIprrAkQ" name="departureTime">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_H3IfgCDzEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IgzUwClkEfCrcvRIprrAkQ" name="arrivalTime">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_LnWBwCDzEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7sClkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_7agU0iD0EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7sSlkEfCrcvRIprrAkQ" name="price">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_Hmt9kCD2EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7silkEfCrcvRIprrAkQ">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_rcXLMiD2EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7sylkEfCrcvRIprrAkQ" name="bookingavailbilityimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_dfQ38CHXEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Igz7tClkEfCrcvRIprrAkQ" name="AirlineImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_b0Y4ICDzEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7tSlkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_y5NCICD0EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7tilkEfCrcvRIprrAkQ" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_1j3RkCD0EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Igz7tylkEfCrcvRIprrAkQ" name="BookingItemImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_agGT0CD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7uClkEfCrcvRIprrAkQ" name="title">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_jdE14CD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7uSlkEfCrcvRIprrAkQ" name="location">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_jdFc8CD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7uilkEfCrcvRIprrAkQ" name="imageUrls">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_jdFc8iD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7uylkEfCrcvRIprrAkQ" name="facilities">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_jdFc8yD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7vClkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_nsKFciD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7vSlkEfCrcvRIprrAkQ" name="description">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_4gygQCD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7vilkEfCrcvRIprrAkQ" name="packageOptions">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_d1P_0iD3EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Igz7vylkEfCrcvRIprrAkQ" name="PackageOptionImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_0UUf0CD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7wClkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ZVYiQCD3EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7wSlkEfCrcvRIprrAkQ" name="price">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ZVdawCD3EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7wilkEfCrcvRIprrAkQ" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ZVeo4CD3EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Igz7wylkEfCrcvRIprrAkQ" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_BW5BcCD6EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7xClkEfCrcvRIprrAkQ" name="orderId">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_J3o6gCD6EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7xSlkEfCrcvRIprrAkQ" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_T7Y3YCD6EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7xilkEfCrcvRIprrAkQ" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ylL1wCD7EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7xylkEfCrcvRIprrAkQ" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_fhfF4SD8EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7yClkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_h-J8oiD8EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7ySlkEfCrcvRIprrAkQ" name="quantity">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_6aWssCFzEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7yilkEfCrcvRIprrAkQ" name="startDate">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_9TKs4CFzEfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7yylkEfCrcvRIprrAkQ" name="endDate">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_A3bd0CF0EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Igz7zClkEfCrcvRIprrAkQ" name="CartImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_vE7R4CE5EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7zSlkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_yO-zECE5EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7zilkEfCrcvRIprrAkQ" name="total">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_0A1LMCE5EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz7zylkEfCrcvRIprrAkQ" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_20phMiE6EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Igz70ClkEfCrcvRIprrAkQ" name="CartItemImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#__Q5KMCE5EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz70SlkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_J1DFcCE6EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz70ilkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_RJHI8iE6EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz70ylkEfCrcvRIprrAkQ" name="cartimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_s-YmsiE6EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz71ClkEfCrcvRIprrAkQ" name="quantity">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_0XVSUCHLEfC7j5ziKZetqQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz71SlkEfCrcvRIprrAkQ" name="startDate">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_DKlEMCHMEfC7j5ziKZetqQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz71ilkEfCrcvRIprrAkQ" name="endDate">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_LyD3YCHMEfC7j5ziKZetqQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Igz71ylkEfCrcvRIprrAkQ" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_A5_PsCHOEfC7j5ziKZetqQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0iwClkEfCrcvRIprrAkQ" name="WishlistImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_wk23ICGHEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0iwSlkEfCrcvRIprrAkQ" name="wishlistId">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_0UbRcCGNEfCOW9oTU_NIag"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0iwilkEfCrcvRIprrAkQ" name="addedAt">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_N7AqECGOEfCOW9oTU_NIag"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0iwylkEfCrcvRIprrAkQ" name="WishlistImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_BVoawCGKEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0ixClkEfCrcvRIprrAkQ" name="wishlistimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_aU6i0iGKEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0ixSlkEfCrcvRIprrAkQ" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ktr4AyGLEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0ixilkEfCrcvRIprrAkQ" name="CollectionImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_w-cb0CGHEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0ixylkEfCrcvRIprrAkQ" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_UjEqkiGLEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0iyClkEfCrcvRIprrAkQ" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_hhCOcCGOEfCOW9oTU_NIag"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0iySlkEfCrcvRIprrAkQ" name="collectionId">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_hhEDoCGOEfCOW9oTU_NIag"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0iyilkEfCrcvRIprrAkQ" name="title">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_mqjtACGOEfCOW9oTU_NIag"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0iyylkEfCrcvRIprrAkQ" name="WishlistImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_9_EuoCGJEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0izClkEfCrcvRIprrAkQ" name="wishlistimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_bzhO0CGKEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0izSlkEfCrcvRIprrAkQ" name="collectionimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_eUIxcCGKEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0izilkEfCrcvRIprrAkQ" name="ReviewImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_LkxpICGnEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0izylkEfCrcvRIprrAkQ" name="reviewId">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_o4LRwCGnEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i0ClkEfCrcvRIprrAkQ" name="reviewContent">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_va7NECGnEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i0SlkEfCrcvRIprrAkQ" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_DiVnQCGoEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i0ilkEfCrcvRIprrAkQ" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_nDZ2kiGpEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i0ylkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_3RBUsiGpEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0i1ClkEfCrcvRIprrAkQ" name="ReviewImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_-QD_4CGoEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i1SlkEfCrcvRIprrAkQ" name="reviewimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_GpvnoCGpEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i1ilkEfCrcvRIprrAkQ" name="rating">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_UkmY8CGpEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0i1ylkEfCrcvRIprrAkQ" name="BookingAvailbilityImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_As6VoCHREfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i2ClkEfCrcvRIprrAkQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_O9KIICHREfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i2SlkEfCrcvRIprrAkQ" name="quota">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_isaEgCHSEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i2ilkEfCrcvRIprrAkQ" name="available">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_pgrNoCHSEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ig0i2ylkEfCrcvRIprrAkQ" name="BookingAvailabilityImpl">
+      <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_Yvw_wCHTEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i3ClkEfCrcvRIprrAkQ" name="date">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_y8aS0CHTEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i3SlkEfCrcvRIprrAkQ">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ohBnICHVEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i3ilkEfCrcvRIprrAkQ" name="blogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_2z_R8SDOEfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i3ylkEfCrcvRIprrAkQ" name="blogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_GeDFICDREfCf3YcdppMP9A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig0i4ClkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_-fIyMCDuEfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J0ClkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_7ag74iD0EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J0SlkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_nsNv0CD1EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J0ilkEfCrcvRIprrAkQ">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_rccqwCD2EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J0ylkEfCrcvRIprrAkQ">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_JRwtoiD3EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J1ClkEfCrcvRIprrAkQ">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_d1P_1SD3EfCXKsLM5KbBlw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J1SlkEfCrcvRIprrAkQ" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_fhfF5CD8EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J1ilkEfCrcvRIprrAkQ" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_h-KjsiD8EfCTVfc_I9vAmg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J1ylkEfCrcvRIprrAkQ" name="cartitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_RJJlMCE6EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J2ClkEfCrcvRIprrAkQ" name="cartitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_s-YmtSE6EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J2SlkEfCrcvRIprrAkQ" name="cartimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_20phNSE6EfC0z_Zbk-HEuQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J2ilkEfCrcvRIprrAkQ" name="wishlistimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_aU7J4iGKEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J2ylkEfCrcvRIprrAkQ" name="wishlistimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_bzhO0yGKEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J3ClkEfCrcvRIprrAkQ" name="wishlistimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_eUIxcyGKEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J3SlkEfCrcvRIprrAkQ" name="collectionimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_UjFRoiGLEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J3ilkEfCrcvRIprrAkQ" name="wishlistimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ktylsCGLEfCb972WowPcIw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J3ylkEfCrcvRIprrAkQ" name="reviewimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_GpzSACGpEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J4ClkEfCrcvRIprrAkQ" name="reviewimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_nDc54CGpEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J4SlkEfCrcvRIprrAkQ" name="reviewimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_3RB7wiGpEfCOfc_TgUKvxw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J4ilkEfCrcvRIprrAkQ">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_ohBnIyHVEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J4ylkEfCrcvRIprrAkQ" name="roomoptionimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_8JgNJSHWEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J5ClkEfCrcvRIprrAkQ" name="bookingitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_dfQ38yHXEfCcw4vRG08oew"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>

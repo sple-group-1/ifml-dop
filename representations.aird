@@ -18,6 +18,8 @@
     <semanticResources>platform:/resource/online-ticketing-uml-dop/online-ticketing-uml-dop.uml</semanticResources>
     <semanticResources>models/review.core</semanticResources>
     <semanticResources>models/wishlist.core</semanticResources>
+    <semanticResources>models/bookingevent.core</semanticResources>
+    <semanticResources>models/bookingflight.core</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_rTVVkCD3EfCf3YcdppMP9A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_r5zfsCD3EfCf3YcdppMP9A" name="main" repPath="#_r5FG8CD3EfCf3YcdppMP9A" changeId="1746174213020">
