@@ -30,11 +30,22 @@
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_-Wzz0CPnEfCETeODqcOJAw" name="Booking">
       <annotations text="Booking"/>
-      <viewElementEvents id="_AzDMwCPoEfCETeODqcOJAw" name="Booking">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_K2rN1yPoEfCETeODqcOJAw">
-          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="booking.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
-        </outInteractionFlows>
-      </viewElementEvents>
+      <viewElements xsi:type="ext:IFMLMenu" id="_1TRVoCzNEfCakZ4Mc23mvQ" name="BookingHotel">
+        <annotations text="Booking Hotel"/>
+        <viewElementEvents id="_DdA3gCzOEfCakZ4Mc23mvQ" name="BookingHotel">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MWZTByzOEfCakZ4Mc23mvQ">
+            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="booking.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+          </outInteractionFlows>
+        </viewElementEvents>
+      </viewElements>
+      <viewElements xsi:type="ext:IFMLMenu" id="_30y3MCzNEfCakZ4Mc23mvQ" name="BookingFlight">
+        <annotations text="Booking Flight"/>
+        <viewElementEvents id="_ImEcACzOEfCakZ4Mc23mvQ" name="BookingFlight">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_N8PPdyzOEfCakZ4Mc23mvQ">
+            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="bookingflight.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+          </outInteractionFlows>
+        </viewElementEvents>
+      </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_SrRLgCPoEfCETeODqcOJAw" name="Wishlist">
       <annotations text="Wishlist"/>

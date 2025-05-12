@@ -1,5 +1,323 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_RNew4ClkEfCrcvRIprrAkQ">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_RNew4ClkEfCrcvRIprrAkQ">
+  <interactionFlowModel id="_NirlICy8EfCakZ4Mc23mvQ">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_8PHj4CzBEfCakZ4Mc23mvQ" name="Booking Flight">
+      <parameters id="_Bfb8EizEEfCakZ4Mc23mvQ" name="departureLocation" direction="inout"/>
+      <parameters id="_EulYoizEEfCakZ4Mc23mvQ" name="arrivalLocation" direction="inout"/>
+      <parameters id="_L1TjsizEEfCakZ4Mc23mvQ" name="departureTime"/>
+      <viewElements xsi:type="core:ViewContainer" id="_QghnkCzCEfCakZ4Mc23mvQ" name="Search Flight Form Page">
+        <annotations text="/flight"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <viewElements xsi:type="ext:Form" id="_bXslcCzCEfCakZ4Mc23mvQ" name="Search Flight Form">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_mvT98CzCEfCakZ4Mc23mvQ" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_5Sl2dyzDEfCakZ4Mc23mvQ">
+              <parameterBindingGroup id="_5uERgizDEfCakZ4Mc23mvQ">
+                <parameterBindings id="_6dTWEizDEfCakZ4Mc23mvQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.0"/>
+                <parameterBindings id="_Yn0z8izEEfCakZ4Mc23mvQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.1/@subViewComponentParts.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.1"/>
+                <parameterBindings id="_aujP4izEEfCakZ4Mc23mvQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.2/@subViewComponentParts.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.2"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_pPqa0CzCEfCakZ4Mc23mvQ" name="Departure Location">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ALDYgCzDEfCakZ4Mc23mvQ" name="departureLocation" direction="inout">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_p-eBkCzCEfCakZ4Mc23mvQ" name="Arrival Location">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_BD5FACzDEfCakZ4Mc23mvQ" name="arrivalLocation" direction="inout">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_qjI04CzCEfCakZ4Mc23mvQ" name="Departure Time">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_BnC1YCzDEfCakZ4Mc23mvQ" name="departureTime">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_LSYVcCzHEfCakZ4Mc23mvQ" name="List Flight Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/flight/search/departurelocation/:departureLocation/arrivallocation/:arrivalLocation/departuretime/:departureTime"/>
+        <parameters id="_F2UDcCzJEfCakZ4Mc23mvQ" name="departureLocation" direction="inout"/>
+        <parameters id="_H1IgkCzJEfCakZ4Mc23mvQ" name="arrivalLocation" direction="inout"/>
+        <parameters id="_If7xECzJEfCakZ4Mc23mvQ" name="departureTime" direction="inout"/>
+        <viewElementEvents id="_KkUDoCzJEfCakZ4Mc23mvQ" name="back"/>
+        <viewElementEvents id="_NL6_ECzJEfCakZ4Mc23mvQ" name="Add Flight">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_q-cDIC5qEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_T_VzoCzJEfCakZ4Mc23mvQ" name="ListRow Flight ">
+          <viewElementEvents id="_c59lQCzJEfCakZ4Mc23mvQ" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_gDQSgC5rEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+              <parameterBindingGroup id="_4FXAoC5rEfCG6tu_DvYz0w">
+                <parameterBindings id="_6bWnoi5rEfCG6tu_DvYz0w">
+                  <sourceParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                  <targetParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                </parameterBindings>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_ffyYACzJEfCakZ4Mc23mvQ" name="List Flight Data Binding" uniformResourceIdentifier="/hotel/search?departurelocation=:departureLocation&amp;arrivallocation=:arrivalLocation&amp;departuretime=:departureTime">
+            <parameters id="_id02cCzJEfCakZ4Mc23mvQ" name="Id" direction="inout"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_vgkekCzKEfCakZ4Mc23mvQ" name="Departure Location" featureConcept="//@domainModel/@domainElements.30"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_whZpcCzKEfCakZ4Mc23mvQ" name="Arrival Location" featureConcept="//@domainModel/@domainElements.31"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_xZ5XsCzKEfCakZ4Mc23mvQ" name="Departure Time" featureConcept="//@domainModel/@domainElements.32"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4kkOoCzKEfCakZ4Mc23mvQ" name="Airline" featureConcept="//@domainModel/@domainElements.128"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_uDecMCzPEfCakZ4Mc23mvQ" name="Detail Flight Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.2/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.3/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.4/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.5/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/flight/:id/departurelocation/:departureLocation/arrivallocation/:arrivalLocation/departuretime/:departureTime"/>
+        <parameters id="_DbklsCzREfCVYIN0WS7kzg" name="Id" direction="inout"/>
+        <viewElementEvents id="_HF7XkCzREfCVYIN0WS7kzg" name="Add Class Option">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_GwmGAC5sEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_NTWjICzREfCVYIN0WS7kzg" name="Detail Flight">
+          <parameters id="_RoL1YCzREfCVYIN0WS7kzg" name="Id" direction="inout"/>
+          <viewElementEvents id="_SvbxUCzREfCVYIN0WS7kzg" name="Update Flight">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_7UwKQC5qEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.6"/>
+          </viewElementEvents>
+          <viewElementEvents id="_XfFXUCzREfCVYIN0WS7kzg" name="Delete Flight">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_cfb4YC5pEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_aSujoCzREfCVYIN0WS7kzg" name="Detail Flight Data Binding">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_fMRsgCzREfCVYIN0WS7kzg" name="Departure Location" featureConcept="//@domainModel/@domainElements.30"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_gLz24CzREfCVYIN0WS7kzg" name="Arrival Location" featureConcept="//@domainModel/@domainElements.31"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_hG9QgCzREfCVYIN0WS7kzg" name="Departure Time" featureConcept="//@domainModel/@domainElements.32"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_hs_VwCzREfCVYIN0WS7kzg" name="Arrival Time" featureConcept="//@domainModel/@domainElements.33"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_jVGjECzREfCVYIN0WS7kzg" name="Airline" featureConcept="//@domainModel/@domainElements.128"/>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:List" id="_vazJkCzREfCVYIN0WS7kzg" name="List Class Option">
+          <viewElementEvents id="_94wA4CzREfCVYIN0WS7kzg" name="Book Flight">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_DFbUcC5vEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3">
+              <parameterBindingGroup id="_D2yf8C5vEfCG6tu_DvYz0w">
+                <parameterBindings id="_IpEjMi5vEfCG6tu_DvYz0w">
+                  <sourceParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                  <targetParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                </parameterBindings>
+                <parameterBindings id="_z_CHoi5vEfCG6tu_DvYz0w" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewComponentParts.0/@parameters.0"/>
+                <parameterBindings id="_3WUMgi5vEfCG6tu_DvYz0w" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.0"/>
+                <parameterBindings id="_68Tbwi5vEfCG6tu_DvYz0w" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.1"/>
+                <parameterBindings id="_-izoYi5vEfCG6tu_DvYz0w" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.2" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@parameters.2"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_DBjtwCzSEfCVYIN0WS7kzg" name="Manage Class Option"/>
+          <viewElementEvents id="_I_baYCzSEfCVYIN0WS7kzg" name="Update Class Option">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_J0th0C5tEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7"/>
+          </viewElementEvents>
+          <viewElementEvents id="_LKb5YCzSEfCVYIN0WS7kzg" name="Delete Class Option">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_I75OAC5uEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.3"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_QHJrACzSEfCVYIN0WS7kzg" name="Flight Class Option List Data Binding">
+            <parameters id="_hBynMCzSEfCVYIN0WS7kzg" name="classId" direction="inout"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_hvlhUCzSEfCVYIN0WS7kzg" name="Class" featureConcept="//@domainModel/@domainElements.129"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_jcl1sCzSEfCVYIN0WS7kzg" name="Price">
+              <featureConcept href="review.core#//@domainModel/@domainElements.51"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_pD1LACzSEfCVYIN0WS7kzg" name="Delete Fight Confirmation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0" isModal="true">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_VvlfwC5qEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1"/>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_qKClICzSEfCVYIN0WS7kzg" name="Delete Class Flight Confirmation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.3/@outInteractionFlows.0" isModal="true">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_L4GgcC5uEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.5"/>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_mfL1QCzYEfCVYIN0WS7kzg" name="Flight Confirmation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/flight/:id/class/:classId/book"/>
+        <viewElementEvents id="_uwOeYCzYEfCVYIN0WS7kzg" name="Place Order"/>
+        <viewElements xsi:type="ext:Details" id="_ykTM8CzYEfCVYIN0WS7kzg" name="Details">
+          <parameters id="_psArsCzaEfCVYIN0WS7kzg" name="Parameter"/>
+          <parameters id="_rumOgCzaEfCVYIN0WS7kzg" name="Parameter"/>
+          <parameters id="_s7KIQCzaEfCVYIN0WS7kzg" name="Parameter"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_u7oLMCzaEfCVYIN0WS7kzg" name="Data Binding"/>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_IArkECzbEfCVYIN0WS7kzg" name="Add Flight Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/flight/add"/>
+        <viewElements xsi:type="ext:Form" id="_a90jgCzbEfCVYIN0WS7kzg" name="Add Flight">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_dwOZsCzbEfCVYIN0WS7kzg" name="Add">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_SCt3UC5oEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_0_yQkCzbEfCVYIN0WS7kzg" name="Departure Location">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_VyKhgCzcEfCVYIN0WS7kzg" name="departureLocation">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_12QlkCzbEfCVYIN0WS7kzg" name="Arrival Location">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_XkcXcCzcEfCVYIN0WS7kzg" name="arrivalLocation">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_2aWxICzbEfCVYIN0WS7kzg" name="Departure Time">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_YYaLACzcEfCVYIN0WS7kzg" name="departureTime">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_3ivVgCzbEfCVYIN0WS7kzg" name="Arrival Time">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ZBtmsCzcEfCVYIN0WS7kzg" name="arrivalTime">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_4KfSACzbEfCVYIN0WS7kzg" name="Airline">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ZlfCICzcEfCVYIN0WS7kzg" name="airline">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_LhhasC01EfCmN_btVQWYSg" name="Add Class Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="flight/:id/classoption/add"/>
+        <viewElements xsi:type="ext:Form" id="_fQbOQC01EfCmN_btVQWYSg" name="Add Class Option">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_midRcC01EfCmN_btVQWYSg" name="Add">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_UU4xcC5sEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.3"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_pKiG8C01EfCmN_btVQWYSg" name="Class Type">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_rPlH4C01EfCmN_btVQWYSg" name="class">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_p3GSAC01EfCmN_btVQWYSg" name="Price">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_sAAfQC01EfCmN_btVQWYSg" name="price">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#ELong"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#ELong"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_mzQREC02EfCmN_btVQWYSg" name="Update Flight Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/flight/update"/>
+        <viewElements xsi:type="ext:Form" id="_v7UBwC02EfCmN_btVQWYSg" name="Update Flight">
+          <parameters id="__WPesC02EfCmN_btVQWYSg" name="Id" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_KuQf0C03EfCmN_btVQWYSg" name="Update">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_CJLEYC5rEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_-x8e0C02EfCmN_btVQWYSg" name="Flight Data">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_HOplYC03EfCmN_btVQWYSg" name="Departure Location" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ORKl4C03EfCmN_btVQWYSg" name="departureLocation">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_H_U0YC03EfCmN_btVQWYSg" name="Arrival Location" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_O1RYgC03EfCmN_btVQWYSg" name="arrivalLocation">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_Iiz78C03EfCmN_btVQWYSg" name="Departure Time" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_PW6tAC03EfCmN_btVQWYSg" name="departureTime">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_JSP00C03EfCmN_btVQWYSg" name="Arrival Time" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_P4S7wC03EfCmN_btVQWYSg" name="arrivalTime">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_J6eScC03EfCmN_btVQWYSg" name="Airline" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_QZQTwC03EfCmN_btVQWYSg" name="airline">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_WFQX0C04EfCmN_btVQWYSg" name="Update Class Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.2/@outInteractionFlows.0">
+        <annotations text="/flight/:id/classoption/update"/>
+        <viewElements xsi:type="ext:Form" id="_v0puMC04EfCmN_btVQWYSg" name="Update Class Option">
+          <parameters id="_1ej9AC04EfCmN_btVQWYSg" name="Id" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_ATdqAC05EfCmN_btVQWYSg" name="Update">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_RESt8C5tEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.4"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_5Xv1EC04EfCmN_btVQWYSg" name="Class Option Data">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_79wOAC04EfCmN_btVQWYSg" name="Class Type" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_9yuyoC04EfCmN_btVQWYSg" name="class">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_8yVFkC04EfCmN_btVQWYSg" name="Price" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_-jBAEC04EfCmN_btVQWYSg" name="price">
+                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#ELong"/>
+              </subViewComponentParts>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#ELong"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_iNaZwC5nEfCG6tu_DvYz0w" name="List Class Option Availability"/>
+      <viewElements xsi:type="core:ViewContainer" id="_olTI4C5nEfCG6tu_DvYz0w" name="Add Class Option Availability"/>
+      <viewElements xsi:type="core:ViewContainer" id="_saTEgC5nEfCG6tu_DvYz0w" name="Update Class Option Availability Page"/>
+      <actions id="_G4xHYC5oEfCG6tu_DvYz0w" name="Add Flight" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_Vtff8C5oEfCG6tu_DvYz0w" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_vhVRcC5oEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+        </actionEvents>
+      </actions>
+      <actions id="_1iLkIC5pEfCG6tu_DvYz0w" name="Delete Flight" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.2/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <actionEvents id="_-1EEwC5pEfCG6tu_DvYz0w" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Wv9-sC5qEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+        </actionEvents>
+      </actions>
+      <actions id="_9NTnUC5qEfCG6tu_DvYz0w" name="Update Flight" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="_IBfioC5rEfCG6tu_DvYz0w" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_KNL-IC5rEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+            <parameterBindingGroup id="_LqUqgC5rEfCG6tu_DvYz0w">
+              <parameterBindings id="_PAhKQi5rEfCG6tu_DvYz0w" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
+      <actions id="_I_MrkC5sEfCG6tu_DvYz0w" name="Add Class Option" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <parameters id="_PllwwC5sEfCG6tu_DvYz0w" name="Id" direction="inout"/>
+        <actionEvents id="_L6VnAC5sEfCG6tu_DvYz0w" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_XsBFUC5sEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+            <parameterBindingGroup id="_YTDQIC5sEfCG6tu_DvYz0w">
+              <parameterBindings id="_ay6k0i5sEfCG6tu_DvYz0w">
+                <sourceParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                <targetParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+              </parameterBindings>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
+      <actions id="_8VducC5sEfCG6tu_DvYz0w" name="Update Class Option" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="_aT7tUC5tEfCG6tu_DvYz0w" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_hYc48C5tEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+            <parameterBindingGroup id="_i1wkcC5tEfCG6tu_DvYz0w">
+              <parameterBindings id="_kqZK0i5tEfCG6tu_DvYz0w">
+                <sourceParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+                <targetParameter href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.0"/>
+              </parameterBindings>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
+      <actions id="_BC7GoC5uEfCG6tu_DvYz0w" name="Delete Class Option" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.3/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <actionEvents id="_U4C28C5uEfCG6tu_DvYz0w" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_XCFsoC5uEfCG6tu_DvYz0w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+        </actionEvents>
+      </actions>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
   <domainModel id="_RNew4SlkEfCrcvRIprrAkQ">
     <domainElements xsi:type="core:UMLDomainConcept" id="_RNuBcClkEfCrcvRIprrAkQ" name="CustomerImpl">
       <classifier xsi:type="uml:Class" href="../online-ticketing-uml-dop.uml#_yn6goCCuEfCTVfc_I9vAmg"/>
@@ -384,6 +702,12 @@
     </domainElements>
     <domainElements xsi:type="core:UMLStructuralFeature" id="_RNv2xSlkEfCrcvRIprrAkQ" name="bookingitemimpl">
       <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_dfQ38yHXEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_U03wqizNEfCakZ4Mc23mvQ" name="airline">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_LVepoCcdEfCXGemhMC8nNA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_6nqjQyzUEfCVYIN0WS7kzg" name="class">
+      <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_uV6jACccEfCXGemhMC8nNA"/>
     </domainElements>
   </domainModel>
 </core:IFMLModel>
