@@ -8,6 +8,7 @@
         <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="bookingevent.core#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2/@actionEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="core:ViewContainer" id="_WR1wkCEqEfCTVfc_I9vAmg" name="Wrapper Tab">
           <annotations text="Tab"/>
           <viewElements xsi:type="core:ViewContainer" id="_h4KTcCEqEfCTVfc_I9vAmg" name="Upcoming Orders">

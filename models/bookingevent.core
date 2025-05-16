@@ -1,8 +1,339 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_IgmgUClkEfCrcvRIprrAkQ">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_IgmgUClkEfCrcvRIprrAkQ">
   <interactionFlowModel id="_51QT8CloEfCrcvRIprrAkQ">
-    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_MpyLUCmoEfCrcvRIprrAkQ" name="Delta">
-      <viewElements xsi:type="dop-extension:ModifiedViewContainer" id="_O-LP0CmoEfCrcvRIprrAkQ" name="Modified ViewContainer"/>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_qRV3EDGgEfCVp7pu0Q51LQ" name="Booking Event ">
+      <viewElements xsi:type="core:ViewContainer" id="_tH50gDGgEfCVp7pu0Q51LQ" name="List Event Page">
+        <annotations text="/event"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.5/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_z9J1GDGgEfCVp7pu0Q51LQ" name="Add Event">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Or29RzGqEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_2KXTjjGgEfCVp7pu0Q51LQ" name="ListRow Event">
+          <parameters xsi:type="ext:SimpleField" id="_RCi25TGhEfCVp7pu0Q51LQ" name="Search"/>
+          <viewElementEvents id="_5xBRKDGgEfCVp7pu0Q51LQ" name="Detail"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_7MzSrTGgEfCVp7pu0Q51LQ" name="List Event Data Binding">
+            <parameters id="_-oIxEjGgEfCVp7pu0Q51LQ" name="eventId"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__-p4HzGgEfCVp7pu0Q51LQ" name="Image" featureConcept="//@domainModel/@domainElements.19"/>
+            <visualizationAttribute id="_Avb01DGhEfCVp7pu0Q51LQ" name="Title" featureConcept="//@domainModel/@domainElements.6"/>
+            <visualizationAttribute id="_CBmARDGhEfCVp7pu0Q51LQ" name="Location" featureConcept="//@domainModel/@domainElements.20"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_C2-TkDGiEfCVp7pu0Q51LQ" name="Detail Event Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.1/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.3/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.6/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/event/:eventId"/>
+        <parameters id="_kA1uQjHgEfCVp7pu0Q51LQ" name="eventId" direction="inout"/>
+        <viewElementEvents id="_HhUi2DGiEfCVp7pu0Q51LQ" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_KLSOtzGiEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </viewElementEvents>
+        <viewElementEvents id="_V_byODGiEfCVp7pu0Q51LQ" name="Add Package Option">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_i_8V9zG0EfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5">
+            <parameterBindingGroup id="_vn1DgjG0EfCVp7pu0Q51LQ">
+              <parameterBindings id="_wXaGUjG0EfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_Y0-cADGiEfCVp7pu0Q51LQ" name="Detail Event">
+          <parameters id="_cM8dUjGiEfCVp7pu0Q51LQ" name="eventId" direction="inout"/>
+          <viewElementEvents id="_f0aTSDGiEfCVp7pu0Q51LQ" name="Edit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_JbeE5zGuEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4">
+              <parameterBindingGroup id="_PZ904jG0EfCVp7pu0Q51LQ">
+                <parameterBindings id="_P8hIUjG0EfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_iB9I6DGiEfCVp7pu0Q51LQ" name="Delete Event">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_FUhepzGjEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.1"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_jwBNPTGiEfCVp7pu0Q51LQ" name="Detail Event Data Binding">
+            <parameters id="_n75-0jGiEfCVp7pu0Q51LQ" name="id" direction="inout"/>
+            <visualizationAttribute id="_tnealDGiEfCVp7pu0Q51LQ" name="Image" featureConcept="//@domainModel/@domainElements.19"/>
+            <visualizationAttribute id="_urjGtDGiEfCVp7pu0Q51LQ" name="Title" featureConcept="//@domainModel/@domainElements.6"/>
+            <visualizationAttribute id="_vLM3JDGiEfCVp7pu0Q51LQ" name="Location" featureConcept="//@domainModel/@domainElements.20"/>
+            <visualizationAttribute id="_vsMEVDGiEfCVp7pu0Q51LQ" name="Description" featureConcept="//@domainModel/@domainElements.47"/>
+            <visualizationAttribute id="_wItoRDGiEfCVp7pu0Q51LQ" name="Facilities" featureConcept="//@domainModel/@domainElements.21"/>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_BQnkYTGjEfCVp7pu0Q51LQ" name="Delete Event Confirmation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0" isModal="true">
+          <viewElementEvents id="_NYLMCDGjEfCVp7pu0Q51LQ" name="Delete Event">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_TAMkdzGjEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.5">
+              <parameterBindingGroup id="_UbnZkjGjEfCVp7pu0Q51LQ">
+                <parameterBindings id="_VVjSQjGjEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+        </viewElements>
+        <viewElements xsi:type="ext:List" id="_nKTGTjGjEfCVp7pu0Q51LQ" name="Package Option">
+          <parameters id="_r_LKgjGjEfCVp7pu0Q51LQ" name="packageId" direction="inout"/>
+          <viewElementEvents id="_frc5qDGkEfCVp7pu0Q51LQ" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_8ZjVdDGnEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+              <parameterBindingGroup id="_ASYBIjGoEfCVp7pu0Q51LQ">
+                <parameterBindings id="_A4HLcjGoEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_vs3kTTGjEfCVp7pu0Q51LQ" name="List Package Data Binding">
+            <parameters id="_zKPDAjGjEfCVp7pu0Q51LQ" name="packageId" direction="inout"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_21WC3zGjEfCVp7pu0Q51LQ" name="Package Name" featureConcept="//@domainModel/@domainElements.128"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_3b7hvzGjEfCVp7pu0Q51LQ" name="Price" featureConcept="//@domainModel/@domainElements.27">
+              <annotations text="isCurrency"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_0MgtcDGlEfCVp7pu0Q51LQ" name="Package Detail Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@actions.4/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/event/:eventId/package/:packageId"/>
+        <viewElementEvents id="_a8YQiDGmEfCVp7pu0Q51LQ" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_dJY6pzGmEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_dziD0jGmEfCVp7pu0Q51LQ">
+              <parameterBindings id="_eW-vIjGmEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_CXAdUDGmEfCVp7pu0Q51LQ" name="Detail Package">
+          <parameters id="_p4V5gjGmEfCVp7pu0Q51LQ" name="eventId" direction="inout"/>
+          <parameters id="_sTZmsjGmEfCVp7pu0Q51LQ" name="packageId" direction="inout"/>
+          <viewElementEvents id="_FlHimDGnEfCVp7pu0Q51LQ" name="Delete Package">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_jolWNzGnEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1"/>
+          </viewElementEvents>
+          <viewElementEvents id="_GegBqDGnEfCVp7pu0Q51LQ" name="Update Package">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_7rFaBzG0EfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4">
+              <parameterBindingGroup id="_DI4BQjG1EfCVp7pu0Q51LQ">
+                <parameterBindings id="_EaXeUjG1EfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@parameters.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_BqS_6DG0EfCVp7pu0Q51LQ" name="Order">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_g_XI1zG1EfCVp7pu0Q51LQ">
+              <parameterBindingGroup id="_hjz5sjG1EfCVp7pu0Q51LQ">
+                <parameterBindings id="_igIYAjG1EfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+                <parameterBindings id="_jGLEUjG1EfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_DQOkTTGmEfCVp7pu0Q51LQ" name="Detail Package Data Binding">
+            <visualizationAttribute id="_EYS_pDGmEfCVp7pu0Q51LQ" name="Package Name" featureConcept="//@domainModel/@domainElements.128"/>
+            <visualizationAttribute id="_FuIKJDGmEfCVp7pu0Q51LQ" name="Price" featureConcept="//@domainModel/@domainElements.27"/>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_KmXO8TGnEfCVp7pu0Q51LQ" name="Delete Package Confirmation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0" isModal="true">
+          <viewElementEvents id="_WJMY6DGnEfCVp7pu0Q51LQ" name="Delete Package">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_YC7htzGnEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.6">
+              <parameterBindingGroup id="_eKHiYjGnEfCVp7pu0Q51LQ">
+                <parameterBindings id="_emv0AjGnEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_Uy2mIDGpEfCVp7pu0Q51LQ" name="Add Event Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/event/add"/>
+        <viewElementEvents id="_bdmm6DGpEfCVp7pu0Q51LQ" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_dRltBzGpEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_nRcobzGpEfCVp7pu0Q51LQ" name="Add Event Form">
+          <parameters xsi:type="ext:SimpleField" id="_se16VTGpEfCVp7pu0Q51LQ" name="Title">
+            <parameters xsi:type="ext:IFMLSlot" id="_5iO4IzGpEfCVp7pu0Q51LQ" name="title"/>
+          </parameters>
+          <parameters xsi:type="ext:SimpleField" id="_xaOPNTGpEfCVp7pu0Q51LQ" name="Description">
+            <parameters xsi:type="ext:IFMLSlot" id="_6yXDQzGpEfCVp7pu0Q51LQ" name="description"/>
+          </parameters>
+          <parameters xsi:type="ext:SimpleField" id="_yGYKlTGpEfCVp7pu0Q51LQ" name="Location">
+            <parameters xsi:type="ext:IFMLSlot" id="_8LSlEzGpEfCVp7pu0Q51LQ" name="location"/>
+          </parameters>
+          <parameters xsi:type="ext:SimpleField" id="_0MbRFTGpEfCVp7pu0Q51LQ" name="Facilities">
+            <parameters xsi:type="ext:IFMLSlot" id="__grzkzGpEfCVp7pu0Q51LQ" name="facilities"/>
+          </parameters>
+          <parameters xsi:type="ext:SimpleField" id="_0xGEZTGpEfCVp7pu0Q51LQ" name="Image">
+            <annotations text="File"/>
+            <parameters xsi:type="ext:IFMLSlot" id="_BLvnMzGqEfCVp7pu0Q51LQ" name="imageUrls"/>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_q_wGKTGpEfCVp7pu0Q51LQ" name="Add Event">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_3IOHdzHjEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
+          </viewElementEvents>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_139wYDGqEfCVp7pu0Q51LQ" name="Update Event Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/event/update"/>
+        <viewElementEvents id="__8HV6DGqEfCVp7pu0Q51LQ" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_aB-rhzGrEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_bKi2EjGrEfCVp7pu0Q51LQ">
+              <parameterBindings id="_btRvsjGrEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_tGbM3zGrEfCVp7pu0Q51LQ" name="Update Event Form">
+          <parameters id="_zgVVMjGrEfCVp7pu0Q51LQ" name="eventId" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_14lmCTGrEfCVp7pu0Q51LQ" name="Update Event">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="__aoChzHjEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.3"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_45OFfTGrEfCVp7pu0Q51LQ" name="Event Data">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_2yz1wDGvEfCVp7pu0Q51LQ" name="Title" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4C1TMDGvEfCVp7pu0Q51LQ" name="title"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_KFjRwDGwEfCVp7pu0Q51LQ" name="Description" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_LPYnoDGwEfCVp7pu0Q51LQ" name="description"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_VHQEoDGwEfCVp7pu0Q51LQ" name="Location" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_WF-WsDGwEfCVp7pu0Q51LQ" name="location"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_aF4h0DGwEfCVp7pu0Q51LQ" name="Facilities" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_bIw7IDGwEfCVp7pu0Q51LQ" name="facilities"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_ghHf4DGwEfCVp7pu0Q51LQ" name="Image" direction="out">
+              <annotations text="File"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_iSJYoDGwEfCVp7pu0Q51LQ" name="imageUrls"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_L8VXwDGxEfCVp7pu0Q51LQ" name="Add Package Option Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/event/:eventId/addpackage"/>
+        <viewElementEvents id="_WGrE2DGxEfCVp7pu0Q51LQ" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_ZKhQVzGxEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_cc4Y8jGxEfCVp7pu0Q51LQ">
+              <parameterBindings id="_cyy-kjGxEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_pdehfzGxEfCVp7pu0Q51LQ" name="Add Package Form">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_s8jQaTGxEfCVp7pu0Q51LQ" name="Add Package">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_F-EhZzHkEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.1"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_w-ATsjGxEfCVp7pu0Q51LQ" name="Package Name">
+            <parameters xsi:type="ext:IFMLSlot" id="_1I604zGxEfCVp7pu0Q51LQ" name="packageName"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_yOz0QjGxEfCVp7pu0Q51LQ" name="Price">
+            <parameters xsi:type="ext:IFMLSlot" id="_1pnHIzGxEfCVp7pu0Q51LQ" name="price"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_iJxN0DGyEfCVp7pu0Q51LQ" name="Update Package Page">
+        <annotations text="/event/:eventId/updatepackage"/>
+        <viewElements xsi:type="ext:Form" id="_nONYEDGyEfCVp7pu0Q51LQ" name="Update Package Form">
+          <parameters id="_GswpojGzEfCVp7pu0Q51LQ" name="eventId" direction="inout"/>
+          <parameters id="_XzjLcjGzEfCVp7pu0Q51LQ" name="packageId" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_uJ70EDGyEfCVp7pu0Q51LQ" name="Update Package">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_Mzx09zHkEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.4"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_omCGoDGyEfCVp7pu0Q51LQ" name="Package Data">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_qOiVgDGyEfCVp7pu0Q51LQ" name="Package Name" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_rS4ucDGyEfCVp7pu0Q51LQ" name="packageName"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_sNumEDGyEfCVp7pu0Q51LQ" name="Price" direction="out">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_tV-AgDGyEfCVp7pu0Q51LQ" name="price"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_xw6sYDGzEfCVp7pu0Q51LQ" name="Order Confirmation Page">
+        <annotations text="/event/:eventId/package/:packageId/placeorder"/>
+        <viewElementEvents id="_SgqjdTHdEfCVp7pu0Q51LQ" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Vt7JpzHdEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_cjesMjHdEfCVp7pu0Q51LQ">
+              <parameterBindings id="_d6neQjHdEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_tuMEsDHdEfCVp7pu0Q51LQ" name="Event Detail">
+          <parameters id="_TOi1wjHgEfCVp7pu0Q51LQ" name="eventId" direction="inout"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_FrfybTHeEfCVp7pu0Q51LQ" name="Event Data Detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_JwZLPzHeEfCVp7pu0Q51LQ" name="Image" featureConcept="//@domainModel/@domainElements.19"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_HApAdDHeEfCVp7pu0Q51LQ" name="Title" featureConcept="//@domainModel/@domainElements.6"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Icy1ZDHeEfCVp7pu0Q51LQ" name="Location" featureConcept="//@domainModel/@domainElements.20"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_KuZrpDHeEfCVp7pu0Q51LQ" name="Description" featureConcept="//@domainModel/@domainElements.47"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_L5ha9DHeEfCVp7pu0Q51LQ" name="Facilities" featureConcept="//@domainModel/@domainElements.21"/>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:Details" id="_5ZnKADHdEfCVp7pu0Q51LQ" name="Package Detail">
+          <parameters id="_WmzyEjHgEfCVp7pu0Q51LQ" name="packageId" direction="inout"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_v42I_THeEfCVp7pu0Q51LQ" name="Package Data Detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_0UDJBDHeEfCVp7pu0Q51LQ" name="Package Name" featureConcept="//@domainModel/@domainElements.128"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_1KfBxDHeEfCVp7pu0Q51LQ" name="Price" featureConcept="//@domainModel/@domainElements.27"/>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:Form" id="__nXswDHdEfCVp7pu0Q51LQ" name="Confirmation Order Form">
+          <parameters xsi:type="ext:SimpleField" id="_91SOpTHeEfCVp7pu0Q51LQ" name="Event Date">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_K5tuQzHfEfCVp7pu0Q51LQ" name="eventDate">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+          </parameters>
+          <parameters xsi:type="ext:SimpleField" id="_JvSihTHfEfCVp7pu0Q51LQ" name="Amount Ticket">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_LvMkwzHfEfCVp7pu0Q51LQ" name="amountTicket">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+            </subViewComponentParts>
+          </parameters>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_rCm9WTHfEfCVp7pu0Q51LQ" name="Place Order">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_RUYSVzHkEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2"/>
+          </viewElementEvents>
+        </viewElements>
+      </viewElements>
+      <actions id="_Er4oMzHhEfCVp7pu0Q51LQ" name="Save Event" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_oEGS6DHhEfCVp7pu0Q51LQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_p6yuxzHhEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </actionEvents>
+      </actions>
+      <actions id="_IzJ_kzHhEfCVp7pu0Q51LQ" name="Save Package" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_uFz9uDHhEfCVp7pu0Q51LQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_v7YYNzHhEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_4_-lMjHhEfCVp7pu0Q51LQ">
+              <parameterBindings id="_6eiN4jHhEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
+      <actions id="_LHy7szHhEfCVp7pu0Q51LQ" name="Save OrderConfirmation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_95XWCDHhEfCVp7pu0Q51LQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="__2NdNzHhEfCVp7pu0Q51LQ">
+            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="order.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
+      <actions id="_NFRVAzHhEfCVp7pu0Q51LQ" name="Update Event" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="_JoZI-DHiEfCVp7pu0Q51LQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MdTglzHiEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_SBN1EjHiEfCVp7pu0Q51LQ">
+              <parameterBindings id="_TTdgEjHiEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
+      <actions id="_Q1sSozHhEfCVp7pu0Q51LQ" name="Update Package" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="_WJBX-DHiEfCVp7pu0Q51LQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_YdwatzHiEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
+            <parameterBindingGroup id="_jffp0jHiEfCVp7pu0Q51LQ">
+              <parameterBindings id="_kulTIjHiEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.2/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
+      <actions id="_SphnwzHhEfCVp7pu0Q51LQ" name="Delete Event" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="_uisRgjHiEfCVp7pu0Q51LQ" name="eventId"/>
+        <actionEvents id="_sEfJuDHiEfCVp7pu0Q51LQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_xcV_NzHiEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </actionEvents>
+      </actions>
+      <actions id="_UwG5wzHhEfCVp7pu0Q51LQ" name="Delete Package" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="_J4T-0jHjEfCVp7pu0Q51LQ" name="packageId"/>
+        <actionEvents id="_PkVGeDHjEfCVp7pu0Q51LQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_RfB4lzHjEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1">
+            <parameterBindingGroup id="_brUtcjHjEfCVp7pu0Q51LQ">
+              <parameterBindings id="_cbHysjHjEfCVp7pu0Q51LQ" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </actions>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_IgmgUSlkEfCrcvRIprrAkQ">
@@ -389,6 +720,9 @@
     </domainElements>
     <domainElements xsi:type="core:UMLStructuralFeature" id="_Ig1J5ClkEfCrcvRIprrAkQ" name="bookingitemimpl">
       <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_dfQ38yHXEfCcw4vRG08oew"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q5gTkDH-EfCVp7pu0Q51LQ" name="packageName">
+      <structuralFeature xsi:type="uml:Property" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter-default"/>
     </domainElements>
   </domainModel>
 </core:IFMLModel>
