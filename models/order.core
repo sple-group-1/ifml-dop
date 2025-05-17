@@ -24,7 +24,9 @@
               <viewComponentParts xsi:type="core:DataBinding" id="_aDdFkCFtEfCTVfc_I9vAmg" name="List Upcoming Hotel Order Data Binding" uniformResourceIdentifier="call/order/upcoming?type=hotel">
                 <parameters id="_xWJI8CFtEfCTVfc_I9vAmg" name="orderId" direction="inout"/>
                 <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_37kk0CFtEfCTVfc_I9vAmg" name="Hotel Name" featureConcept="//@domainModel/@domainElements.6"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_K3mxACFuEfCTVfc_I9vAmg" name="Check-In Date" featureConcept="//@domainModel/@domainElements.53"/>
+                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_K3mxACFuEfCTVfc_I9vAmg" name="Check-In Date">
+                  <featureConcept href="booking.core#//@domainModel/@domainElements.58"/>
+                </subViewComponentParts>
               </viewComponentParts>
             </viewElements>
             <viewElements xsi:type="ext:List" id="_JIAhoCEsEfCTVfc_I9vAmg" name="ListRow UpcomingFlight">
@@ -51,11 +53,9 @@
               </viewElementEvents>
               <viewComponentParts xsi:type="core:DataBinding" id="_8izxgCF0EfCTVfc_I9vAmg" name="List Upcoming Event Order Data Binding" uniformResourceIdentifier="call/order/upcoming?type=event">
                 <parameters id="_9-fsYCF0EfCTVfc_I9vAmg" name="orderId" direction="inout"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__ExX8CF0EfCTVfc_I9vAmg" name="Event Name">
-                  <featureConcept href="main.core#//@domainModel/@domainElements.6"/>
-                </subViewComponentParts>
+                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__ExX8CF0EfCTVfc_I9vAmg" name="Event Name" featureConcept="//@domainModel/@domainElements.67"/>
                 <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__mlEgCF0EfCTVfc_I9vAmg" name="Event Date">
-                  <featureConcept href="main.core#//@domainModel/@domainElements.8"/>
+                  <featureConcept href="booking.core#//@domainModel/@domainElements.58"/>
                 </subViewComponentParts>
               </viewComponentParts>
             </viewElements>
@@ -100,8 +100,10 @@
               </viewElementEvents>
               <viewComponentParts xsi:type="core:DataBinding" id="_Hu2H8CF8EfCTVfc_I9vAmg" name="List Completed Event Order Data Binding" uniformResourceIdentifier="call/order/completed?type=event">
                 <parameters id="_LZX48CF8EfCTVfc_I9vAmg" name="orderId" direction="inout"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_QKZX8CF8EfCTVfc_I9vAmg" name="Event Name" featureConcept="//@domainModel/@domainElements.6"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Ra9n8CF8EfCTVfc_I9vAmg" name="Event Date" featureConcept="//@domainModel/@domainElements.53"/>
+                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_QKZX8CF8EfCTVfc_I9vAmg" name="Event Name" featureConcept="//@domainModel/@domainElements.67"/>
+                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Ra9n8CF8EfCTVfc_I9vAmg" name="Event Date">
+                  <featureConcept href="booking.core#//@domainModel/@domainElements.58"/>
+                </subViewComponentParts>
               </viewComponentParts>
             </viewElements>
           </viewElements>
@@ -162,11 +164,16 @@
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_k2t9YCF5EfCTVfc_I9vAmg" name="Order Created At">
               <featureConcept href="main.core#//@domainModel/@domainElements.8"/>
             </subViewComponentParts>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_LIvt4CF6EfCTVfc_I9vAmg" name="Event Name" featureConcept="//@domainModel/@domainElements.18"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_PFbl4CF6EfCTVfc_I9vAmg" name="Location" featureConcept="//@domainModel/@domainElements.41"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Qp_v8CF6EfCTVfc_I9vAmg" name="Event Date" featureConcept="//@domainModel/@domainElements.8"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_V08x4CF6EfCTVfc_I9vAmg" name="Ticket Quantity" featureConcept="//@domainModel/@domainElements.54"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_uRPsMCF7EfCTVfc_I9vAmg" name="Total Payment" featureConcept="//@domainModel/@domainElements.54"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_LIvt4CF6EfCTVfc_I9vAmg" name="Event Name" featureConcept="//@domainModel/@domainElements.67"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_PFbl4CF6EfCTVfc_I9vAmg" name="Package Name" featureConcept="//@domainModel/@domainElements.69"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Qp_v8CF6EfCTVfc_I9vAmg" name="Location" featureConcept="//@domainModel/@domainElements.68"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_V08x4CF6EfCTVfc_I9vAmg" name="Event Date">
+              <featureConcept href="bookingevent.core#//@domainModel/@domainElements.60"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_uRPsMCF7EfCTVfc_I9vAmg" name="Ticket Quantity">
+              <featureConcept href="bookingevent.core#//@domainModel/@domainElements.59"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_G7L8IDLwEfCL4cs8X2TCdg" name="Total Price" featureConcept="//@domainModel/@domainElements.70"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>
@@ -374,5 +381,9 @@
     <domainElements xsi:type="core:UMLStructuralFeature" id="_-ibkuCEYEfCTVfc_I9vAmg" name="orderimpl">
       <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_h-KjsiD8EfCTVfc_I9vAmg"/>
     </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OFETejLxEfCL4cs8X2TCdg" name="bookingOptionEventTitle"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_7opmCjLxEfCL4cs8X2TCdg" name="bookingOptionEventLocation"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_CowyyjLyEfCL4cs8X2TCdg" name="bookingOptionPackageName"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_RdfyajLyEfCL4cs8X2TCdg" name="totalPrice"/>
   </domainModel>
 </core:IFMLModel>

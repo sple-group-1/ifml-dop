@@ -15,7 +15,7 @@
         <viewElements xsi:type="ext:List" id="_2KXTjjGgEfCVp7pu0Q51LQ" name="ListRow Event">
           <parameters xsi:type="ext:SimpleField" id="_RCi25TGhEfCVp7pu0Q51LQ" name="Search"/>
           <viewElementEvents id="_5xBRKDGgEfCVp7pu0Q51LQ" name="Detail"/>
-          <viewComponentParts xsi:type="core:DataBinding" id="_7MzSrTGgEfCVp7pu0Q51LQ" name="List Event Data Binding">
+          <viewComponentParts xsi:type="core:DataBinding" id="_7MzSrTGgEfCVp7pu0Q51LQ" name="List Event Data Binding" uniformResourceIdentifier="call/event/list">
             <parameters id="_-oIxEjGgEfCVp7pu0Q51LQ" name="eventId"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__-p4HzGgEfCVp7pu0Q51LQ" name="Image" featureConcept="//@domainModel/@domainElements.19"/>
             <visualizationAttribute id="_Avb01DGhEfCVp7pu0Q51LQ" name="Title" featureConcept="//@domainModel/@domainElements.6"/>
@@ -48,7 +48,7 @@
           <viewElementEvents id="_iB9I6DGiEfCVp7pu0Q51LQ" name="Delete Event">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_FUhepzGjEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.1"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_jwBNPTGiEfCVp7pu0Q51LQ" name="Detail Event Data Binding">
+          <viewComponentParts xsi:type="core:DataBinding" id="_jwBNPTGiEfCVp7pu0Q51LQ" name="Detail Event Data Binding" uniformResourceIdentifier="call/event/detail">
             <parameters id="_n75-0jGiEfCVp7pu0Q51LQ" name="id" direction="inout"/>
             <visualizationAttribute id="_tnealDGiEfCVp7pu0Q51LQ" name="Image" featureConcept="//@domainModel/@domainElements.19"/>
             <visualizationAttribute id="_urjGtDGiEfCVp7pu0Q51LQ" name="Title" featureConcept="//@domainModel/@domainElements.6"/>
@@ -75,7 +75,7 @@
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_vs3kTTGjEfCVp7pu0Q51LQ" name="List Package Data Binding">
+          <viewComponentParts xsi:type="core:DataBinding" id="_vs3kTTGjEfCVp7pu0Q51LQ" name="List Package Data Binding" uniformResourceIdentifier="call/package/filter?by=event">
             <parameters id="_zKPDAjGjEfCVp7pu0Q51LQ" name="packageId" direction="inout"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_21WC3zGjEfCVp7pu0Q51LQ" name="Package Name" featureConcept="//@domainModel/@domainElements.128"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_3b7hvzGjEfCVp7pu0Q51LQ" name="Price" featureConcept="//@domainModel/@domainElements.27">
@@ -114,7 +114,7 @@
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_DQOkTTGmEfCVp7pu0Q51LQ" name="Detail Package Data Binding">
+          <viewComponentParts xsi:type="core:DataBinding" id="_DQOkTTGmEfCVp7pu0Q51LQ" name="Detail Package Data Binding" uniformResourceIdentifier="call/package/detail">
             <visualizationAttribute id="_EYS_pDGmEfCVp7pu0Q51LQ" name="Package Name" featureConcept="//@domainModel/@domainElements.128"/>
             <visualizationAttribute id="_FuIKJDGmEfCVp7pu0Q51LQ" name="Price" featureConcept="//@domainModel/@domainElements.27"/>
           </viewComponentParts>
@@ -170,7 +170,7 @@
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_14lmCTGrEfCVp7pu0Q51LQ" name="Update Event">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="__aoChzHjEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.3"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_45OFfTGrEfCVp7pu0Q51LQ" name="Event Data">
+          <viewComponentParts xsi:type="core:DataBinding" id="_45OFfTGrEfCVp7pu0Q51LQ" name="Event Data" uniformResourceIdentifier="call/event/detail">
             <subViewComponentParts xsi:type="ext:SimpleField" id="_2yz1wDGvEfCVp7pu0Q51LQ" name="Title" direction="out">
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4C1TMDGvEfCVp7pu0Q51LQ" name="title"/>
             </subViewComponentParts>
@@ -219,7 +219,7 @@
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_uJ70EDGyEfCVp7pu0Q51LQ" name="Update Package">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_Mzx09zHkEfCVp7pu0Q51LQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.4"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_omCGoDGyEfCVp7pu0Q51LQ" name="Package Data">
+          <viewComponentParts xsi:type="core:DataBinding" id="_omCGoDGyEfCVp7pu0Q51LQ" name="Package Data" uniformResourceIdentifier="call/package/detail">
             <subViewComponentParts xsi:type="ext:SimpleField" id="_qOiVgDGyEfCVp7pu0Q51LQ" name="Package Name" direction="out">
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_rS4ucDGyEfCVp7pu0Q51LQ" name="packageName"/>
             </subViewComponentParts>
@@ -240,7 +240,7 @@
         </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_tuMEsDHdEfCVp7pu0Q51LQ" name="Event Detail">
           <parameters id="_TOi1wjHgEfCVp7pu0Q51LQ" name="eventId" direction="inout"/>
-          <viewComponentParts xsi:type="core:DataBinding" id="_FrfybTHeEfCVp7pu0Q51LQ" name="Event Data Detail">
+          <viewComponentParts xsi:type="core:DataBinding" id="_FrfybTHeEfCVp7pu0Q51LQ" name="Event Data Detail" uniformResourceIdentifier="call/event/detail">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_JwZLPzHeEfCVp7pu0Q51LQ" name="Image" featureConcept="//@domainModel/@domainElements.19"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_HApAdDHeEfCVp7pu0Q51LQ" name="Title" featureConcept="//@domainModel/@domainElements.6"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Icy1ZDHeEfCVp7pu0Q51LQ" name="Location" featureConcept="//@domainModel/@domainElements.20"/>
@@ -250,7 +250,7 @@
         </viewElements>
         <viewElements xsi:type="ext:Details" id="_5ZnKADHdEfCVp7pu0Q51LQ" name="Package Detail">
           <parameters id="_WmzyEjHgEfCVp7pu0Q51LQ" name="packageId" direction="inout"/>
-          <viewComponentParts xsi:type="core:DataBinding" id="_v42I_THeEfCVp7pu0Q51LQ" name="Package Data Detail">
+          <viewComponentParts xsi:type="core:DataBinding" id="_v42I_THeEfCVp7pu0Q51LQ" name="Package Data Detail" uniformResourceIdentifier="call/package/detail">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_0UDJBDHeEfCVp7pu0Q51LQ" name="Package Name" featureConcept="//@domainModel/@domainElements.128"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_1KfBxDHeEfCVp7pu0Q51LQ" name="Price" featureConcept="//@domainModel/@domainElements.27"/>
           </viewComponentParts>
@@ -288,7 +288,7 @@
           </outInteractionFlows>
         </actionEvents>
       </actions>
-      <actions id="_LHy7szHhEfCVp7pu0Q51LQ" name="Save OrderConfirmation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0">
+      <actions id="_LHy7szHhEfCVp7pu0Q51LQ" name="Save Order" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.7/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_95XWCDHhEfCVp7pu0Q51LQ" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="__2NdNzHhEfCVp7pu0Q51LQ">
