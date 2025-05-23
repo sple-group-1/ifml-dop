@@ -14,8 +14,11 @@
         </viewElements>
         <modifies href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_SaHX0Dd1EfCqD4Tq_ioRLg" name="Detail Blog Page">
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_SaHX0Dd1EfCqD4Tq_ioRLg" name="Detail Blog Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0">
         <viewElements xsi:type="dop-extension:ModifiedDetail" id="_hQogIDd1EfCqD4Tq_ioRLg" name="Detail Blog">
+          <viewElementEvents xsi:type="dop-extension:AddedViewElementEvent" id="_gIZJQDfDEfC3xvTYdMV4pg" name="Like">
+            <outInteractionFlows xsi:type="dop-extension:AddedNavigationFlow" id="_p_gYUDfDEfC3xvTYdMV4pg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
           <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_jv4JwDd1EfCqD4Tq_ioRLg" name="Detail Blog Data Binding" uniformResourceIdentifier="call/blog/detail">
             <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_owXBEDd1EfCqD4Tq_ioRLg" name="Like Count">
               <featureConcept href="review.core#//@domainModel/@domainElements.10"/>
@@ -25,6 +28,12 @@
           <modifies href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0"/>
         </viewElements>
         <modifies href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:AddedAction" id="_lEKfsDfDEfC3xvTYdMV4pg" name="Like Blog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents xsi:type="dop-extension:AddedActionEvent" id="_rMa3YDfDEfC3xvTYdMV4pg" name="then">
+          <outInteractionFlows xsi:type="dop-extension:AddedNavigationFlow" id="_vCGIcDfDEfC3xvTYdMV4pg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </actionEvents>
       </interactionFlowModelElement>
       <uses href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
     </interactionFlowModelElements>
