@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_pv07cCD3EfCf3YcdppMP9A">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_pv07cCD3EfCf3YcdppMP9A">
   <interactionFlowModel id="_19t0oCD3EfCf3YcdppMP9A">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_19ytICD3EfCf3YcdppMP9A" name="Home" isXOR="true">
       <annotations text="/"/>
@@ -8,7 +8,7 @@
       <annotations text="Blog"/>
       <viewElementEvents id="_395eiCEJEfCT1qq_RmOq_A" name="Blog">
         <outInteractionFlows xsi:type="core:NavigationFlow" id="_5aq-hyEJEfCT1qq_RmOq_A">
-          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="blog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
@@ -60,6 +60,14 @@
       <viewElementEvents id="_VEynoCPoEfCETeODqcOJAw" name="Wishlist">
         <outInteractionFlows xsi:type="core:NavigationFlow" id="_dR8PRyPoEfCETeODqcOJAw">
           <targetInteractionFlowElement xsi:type="core:ViewContainer" href="wishlist.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_FN98EDd0EfCqD4Tq_ioRLg" name="LikeBlog">
+      <annotations text="Like Blog"/>
+      <viewElementEvents id="_J3gTADd0EfCqD4Tq_ioRLg" name="LikeBlog">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_TA7Vpzd0EfCqD4Tq_ioRLg">
+          <targetInteractionFlowElement xsi:type="dop-extension:ModifiedViewContainer" href="likeblog.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
