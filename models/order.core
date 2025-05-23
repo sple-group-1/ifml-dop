@@ -4,9 +4,8 @@
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_wcfA4CEcEfCTVfc_I9vAmg" name="Order" isXOR="true">
       <viewElements xsi:type="core:ViewContainer" id="_5brwgCEcEfCTVfc_I9vAmg" name="Order Page">
         <annotations text="/order"/>
-        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
-        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="bookingevent.core#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.2/@actionEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="bookingevent.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0"/>
@@ -24,29 +23,15 @@
               </viewElementEvents>
               <viewComponentParts xsi:type="core:DataBinding" id="_aDdFkCFtEfCTVfc_I9vAmg" name="List Upcoming Hotel Order Data Binding" uniformResourceIdentifier="call/order/upcoming?type=hotel">
                 <parameters id="_xWJI8CFtEfCTVfc_I9vAmg" name="orderId" direction="inout"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_37kk0CFtEfCTVfc_I9vAmg" name="Hotel Name" featureConcept="//@domainModel/@domainElements.6"/>
+                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_37kk0CFtEfCTVfc_I9vAmg" name="Hotel Name" featureConcept="//@domainModel/@domainElements.71"/>
                 <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_K3mxACFuEfCTVfc_I9vAmg" name="Check-In Date">
                   <featureConcept href="booking.core#//@domainModel/@domainElements.58"/>
                 </subViewComponentParts>
               </viewComponentParts>
             </viewElements>
-            <viewElements xsi:type="ext:List" id="_JIAhoCEsEfCTVfc_I9vAmg" name="ListRow UpcomingFlight">
-              <viewElementEvents id="_muI8kCF6EfCTVfc_I9vAmg" name="Detail">
-                <outInteractionFlows xsi:type="core:NavigationFlow" id="_21WQsCF6EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
-                  <parameterBindingGroup id="_vUte4CF8EfCTVfc_I9vAmg">
-                    <parameterBindings id="_3FGSACF8EfCTVfc_I9vAmg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
-                  </parameterBindingGroup>
-                </outInteractionFlows>
-              </viewElementEvents>
-              <viewComponentParts xsi:type="core:DataBinding" id="_rC6zMCF0EfCTVfc_I9vAmg" name="List Upcoming Flight Order Data Binding" uniformResourceIdentifier="call/order/upcoming?type=flight">
-                <parameters id="_wVRdoCF0EfCTVfc_I9vAmg" name="orderId" direction="inout"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_y_4pwCF0EfCTVfc_I9vAmg" name="Flight To" featureConcept="//@domainModel/@domainElements.30"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_0pAjsCF0EfCTVfc_I9vAmg" name="Departure Date" featureConcept="//@domainModel/@domainElements.31"/>
-              </viewComponentParts>
-            </viewElements>
             <viewElements xsi:type="ext:List" id="_K9W5sCEsEfCTVfc_I9vAmg" name="ListRow UpcomingEvent">
               <viewElementEvents id="_njLHICF6EfCTVfc_I9vAmg" name="Detail">
-                <outInteractionFlows xsi:type="core:NavigationFlow" id="_4EzGYCF6EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3">
+                <outInteractionFlows xsi:type="core:NavigationFlow" id="_4EzGYCF6EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
                   <parameterBindingGroup id="_wFL5kCF8EfCTVfc_I9vAmg">
                     <parameterBindings id="_39qRsCF8EfCTVfc_I9vAmg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
                   </parameterBindingGroup>
@@ -73,27 +58,15 @@
               </viewElementEvents>
               <viewComponentParts xsi:type="core:DataBinding" id="_yfxJ0CF1EfCTVfc_I9vAmg" name="List Completed Hotel Order Data Binding" uniformResourceIdentifier="call/order/completed?type=hotel">
                 <parameters id="_9jWzECF1EfCTVfc_I9vAmg" name="orderId" direction="inout"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__VthgCF1EfCTVfc_I9vAmg" name="Hotel Name" featureConcept="//@domainModel/@domainElements.6"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__8LroCF1EfCTVfc_I9vAmg" name="Check-In Date" featureConcept="//@domainModel/@domainElements.8"/>
-              </viewComponentParts>
-            </viewElements>
-            <viewElements xsi:type="ext:List" id="_vWKUkCF1EfCTVfc_I9vAmg" name="ListRow CompletedFlight">
-              <viewElementEvents id="_cCCUUCF8EfCTVfc_I9vAmg" name="Detail">
-                <outInteractionFlows xsi:type="core:NavigationFlow" id="_jTP4ICF8EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
-                  <parameterBindingGroup id="_yCyOsCF8EfCTVfc_I9vAmg">
-                    <parameterBindings id="_5cAfACF8EfCTVfc_I9vAmg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
-                  </parameterBindingGroup>
-                </outInteractionFlows>
-              </viewElementEvents>
-              <viewComponentParts xsi:type="core:DataBinding" id="_AIKDYCF8EfCTVfc_I9vAmg" name="List Completed Flight Order Data Binding" uniformResourceIdentifier="call/order/completed?type=flight">
-                <parameters id="_KEhl4CF8EfCTVfc_I9vAmg" name="orderId" direction="inout"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_PdU2kCF8EfCTVfc_I9vAmg" name="Flight To" featureConcept="//@domainModel/@domainElements.30"/>
-                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Qy6wgCF8EfCTVfc_I9vAmg" name="Departure Date" featureConcept="//@domainModel/@domainElements.31"/>
+                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__VthgCF1EfCTVfc_I9vAmg" name="Hotel Name" featureConcept="//@domainModel/@domainElements.71"/>
+                <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__8LroCF1EfCTVfc_I9vAmg" name="Check-In Date">
+                  <featureConcept href="bookingevent.core#//@domainModel/@domainElements.60"/>
+                </subViewComponentParts>
               </viewComponentParts>
             </viewElements>
             <viewElements xsi:type="ext:List" id="_v5uUoCF1EfCTVfc_I9vAmg" name="ListRow CompletedEvent">
               <viewElementEvents id="_cordkCF8EfCTVfc_I9vAmg" name="Detail">
-                <outInteractionFlows xsi:type="core:NavigationFlow" id="_kh3AUCF8EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.3">
+                <outInteractionFlows xsi:type="core:NavigationFlow" id="_kh3AUCF8EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2">
                   <parameterBindingGroup id="_yybi8CF8EfCTVfc_I9vAmg">
                     <parameterBindings id="_6Br-8CF8EfCTVfc_I9vAmg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@parameters.0"/>
                   </parameterBindingGroup>
@@ -119,42 +92,23 @@
           <parameters id="_DNcTkCEfEfCTVfc_I9vAmg" name="orderId" direction="inout"/>
           <viewComponentParts xsi:type="core:DataBinding" id="_K-bjoCEfEfCTVfc_I9vAmg" name="Detail Hotel OrderData Binding" uniformResourceIdentifier="call/order/detail">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_O8zdsCEfEfCTVfc_I9vAmg" name="Order Created At" featureConcept="//@domainModel/@domainElements.53"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_boBzICEfEfCTVfc_I9vAmg" name="Hotel Name" featureConcept="//@domainModel/@domainElements.40"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_WColYCF2EfCTVfc_I9vAmg" name="Location" featureConcept="//@domainModel/@domainElements.41"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ZuJN0CF2EfCTVfc_I9vAmg" name="Room Type" featureConcept="//@domainModel/@domainElements.50"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_boBzICEfEfCTVfc_I9vAmg" name="Hotel Name" featureConcept="//@domainModel/@domainElements.71"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_WColYCF2EfCTVfc_I9vAmg" name="Location" featureConcept="//@domainModel/@domainElements.72"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ZuJN0CF2EfCTVfc_I9vAmg" name="Room Type" featureConcept="//@domainModel/@domainElements.73"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_sL2fQCF2EfCTVfc_I9vAmg" name="Check-In Date">
-              <featureConcept href="main.core#//@domainModel/@domainElements.8"/>
+              <featureConcept href="bookingevent.core#//@domainModel/@domainElements.60"/>
             </subViewComponentParts>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ueYikCF2EfCTVfc_I9vAmg" name="Check-Out Date">
-              <featureConcept href="blog.core#//@domainModel/@domainElements.8"/>
+              <featureConcept href="bookingevent.core#//@domainModel/@domainElements.61"/>
             </subViewComponentParts>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_yLAlUCF2EfCTVfc_I9vAmg" name="Room Quantity" featureConcept="//@domainModel/@domainElements.54"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_D5EigCF3EfCTVfc_I9vAmg" name="Total Payment" featureConcept="//@domainModel/@domainElements.54"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_yLAlUCF2EfCTVfc_I9vAmg" name="Room Quantity">
+              <featureConcept href="bookingevent.core#//@domainModel/@domainElements.59"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_D5EigCF3EfCTVfc_I9vAmg" name="Total Payment" featureConcept="//@domainModel/@domainElements.70"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <viewElements xsi:type="core:ViewContainer" id="_PFohkCF3EfCTVfc_I9vAmg" name="Detail Flight Order Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/order/flight/:orderId"/>
-        <viewElementEvents id="__sNjsCF6EfCTVfc_I9vAmg" name="Back">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Os7w4CF7EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
-        </viewElementEvents>
-        <viewElements xsi:type="ext:Details" id="_-eO1ACF3EfCTVfc_I9vAmg" name="Detail Flight Order">
-          <parameters id="_EnPaoCF4EfCTVfc_I9vAmg" name="orderId" direction="inout"/>
-          <viewComponentParts xsi:type="core:DataBinding" id="_IqKdgCF4EfCTVfc_I9vAmg" name="Detail Flight Order Data Binding" uniformResourceIdentifier="call/order/detail">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_RZovECF4EfCTVfc_I9vAmg" name="Order Created At" featureConcept="//@domainModel/@domainElements.53"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_S3B6ICF4EfCTVfc_I9vAmg" name="Airline Name">
-              <featureConcept href="blog.core#//@domainModel/@domainElements.3"/>
-            </subViewComponentParts>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_TqUYQCF4EfCTVfc_I9vAmg" name="Departure Location" featureConcept="//@domainModel/@domainElements.29"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Uhf34CF4EfCTVfc_I9vAmg" name="Departure Time" featureConcept="//@domainModel/@domainElements.31"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_WAtn4CF4EfCTVfc_I9vAmg" name="Arrival Location" featureConcept="//@domainModel/@domainElements.30"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_XGngACF4EfCTVfc_I9vAmg" name="Arrival Time" featureConcept="//@domainModel/@domainElements.32"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_NHH7kCF5EfCTVfc_I9vAmg" name="Ticket Quantity" featureConcept="//@domainModel/@domainElements.54"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ouA_ECF5EfCTVfc_I9vAmg" name="Total Payment" featureConcept="//@domainModel/@domainElements.54"/>
-          </viewComponentParts>
-        </viewElements>
-      </viewElements>
-      <viewElements xsi:type="core:ViewContainer" id="_Q9SmwCF3EfCTVfc_I9vAmg" name="Detail Event Order Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.1/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_Q9SmwCF3EfCTVfc_I9vAmg" name="Detail Event Order Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElements.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/order/event/:orderId"/>
         <viewElementEvents id="_E1Or8CF7EfCTVfc_I9vAmg" name="Back">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_RusRsCF7EfCTVfc_I9vAmg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
@@ -386,5 +340,8 @@
     <domainElements xsi:type="core:UMLStructuralFeature" id="_7opmCjLxEfCL4cs8X2TCdg" name="bookingOptionEventLocation"/>
     <domainElements xsi:type="core:UMLStructuralFeature" id="_CowyyjLyEfCL4cs8X2TCdg" name="bookingOptionPackageName"/>
     <domainElements xsi:type="core:UMLStructuralFeature" id="_RdfyajLyEfCL4cs8X2TCdg" name="totalPrice"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SVm9wzfiEfCRje-ogqb2gQ" name="Title"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_W-1yvDfiEfCRje-ogqb2gQ" name="Location"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_YFDz7DfiEfCRje-ogqb2gQ" name="bookingOptionRoomType"/>
   </domainModel>
 </core:IFMLModel>
