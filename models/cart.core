@@ -6,10 +6,10 @@
         <annotations text="/cart"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:List" id="_x5q54CHHEfCUwrA_8qrwnA" name="ListRow CartItem">
-          <viewElementEvents id="_P3dSACPmEfCETeODqcOJAw" name="Checkout">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_Sf4FwCPmEfCETeODqcOJAw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_T2a28DfnEfCoFswjVWvzeg" name="Checkout">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_c2-4gDfnEfCoFswjVWvzeg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_jTlWECHOEfC7j5ziKZetqQ" name="Data Binding" uniformResourceIdentifier="call/cart">
+          <viewComponentParts xsi:type="core:DataBinding" id="_jTlWECHOEfC7j5ziKZetqQ" name="Data Binding" uniformResourceIdentifier="call/cartitem/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_txk-8CHOEfC7j5ziKZetqQ" name="Quantity">
               <featureConcept href="booking.core#//@domainModel/@domainElements.57"/>
             </subViewComponentParts>
@@ -21,9 +21,6 @@
             </subViewComponentParts>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_TuyWACHPEfC7j5ziKZetqQ" name="Amount">
               <featureConcept href="order.core#//@domainModel/@domainElements.54"/>
-            </subViewComponentParts>
-            <subViewComponentParts xsi:type="ext:SimpleField" id="_phX7wCHTEfCBpoLhrKFUVw" name="Checkbox" direction="out">
-              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_zhDQ8CHTEfCBpoLhrKFUVw" name="checkbox"/>
             </subViewComponentParts>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__fN2oCHUEfCBpoLhrKFUVw" name="Id" featureConcept="//@domainModel/@domainElements.1"/>
           </viewComponentParts>
