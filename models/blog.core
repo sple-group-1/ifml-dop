@@ -80,7 +80,7 @@
         </viewElements>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_aAV0sCEAEfCT1qq_RmOq_A" name="Update Blog Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
-        <annotations text="blog/update"/>
+        <annotations text="/blog/update"/>
         <viewElementEvents id="_uyaqkCECEfCT1qq_RmOq_A" name="Back">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="__GrjQCECEfCT1qq_RmOq_A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
             <parameterBindingGroup id="_AE6GECEDEfCT1qq_RmOq_A">
@@ -112,7 +112,7 @@
         </actionEvents>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:IFMLAction" id="_VaLP8CECEfCT1qq_RmOq_A" name="Update Blog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="UPDATE"/>
+        <annotations text="PUT"/>
         <actionEvents id="_DU-BQCEGEfCT1qq_RmOq_A" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_OkWDwCEGEfCT1qq_RmOq_A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
             <parameterBindingGroup id="_P8-DkCEGEfCT1qq_RmOq_A">
@@ -121,7 +121,7 @@
           </outInteractionFlows>
         </actionEvents>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_YKWRgCECEfCT1qq_RmOq_A" name="Save Blog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_YKWRgCECEfCT1qq_RmOq_A" name="Create Blog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_D7M60CEGEfCT1qq_RmOq_A" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_KoAxECEGEfCT1qq_RmOq_A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
@@ -179,8 +179,8 @@
       <structuralFeature xsi:type="uml:Property" href="../online-ticketing-uml-dop.uml#_GeDFICDREfCf3YcdppMP9A"/>
     </domainElements>
   </domainModel>
-  <interactionFlowModelViewpoint id="_qoW2NCEIEfCT1qq_RmOq_A" name="Read Blog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
-  <interactionFlowModelViewpoint id="_tvJA9CEIEfCT1qq_RmOq_A" name="Create Blog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+  <interactionFlowModelViewpoint id="_qoW2NCEIEfCT1qq_RmOq_A" name="ReadBlog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+  <interactionFlowModelViewpoint id="_tvJA9CEIEfCT1qq_RmOq_A" name="CreateBlog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
   <interactionFlowModelViewpoint id="_vvd59CEIEfCT1qq_RmOq_A" name="UpdateBlog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0"/>
-  <interactionFlowModelViewpoint id="_xAGbZCEIEfCT1qq_RmOq_A" name="Delete Blog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.1/@viewElementEvents.0"/>
+  <interactionFlowModelViewpoint id="_xAGbZCEIEfCT1qq_RmOq_A" name="DeleteBlog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.1/@viewElementEvents.0"/>
 </core:IFMLModel>

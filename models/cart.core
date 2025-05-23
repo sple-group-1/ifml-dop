@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="ASCII"?>
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_7IrO0CHBEfCE750xnd-W-Q">
   <interactionFlowModel id="_K7JFMCHGEfCUwrA_8qrwnA">
-    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_xwkdsCHGEfCUwrA_8qrwnA" name="Cart" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@actionEvents.0/@outInteractionFlows.0" isXOR="true">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_xwkdsCHGEfCUwrA_8qrwnA" name="Cart" isXOR="true">
       <viewElements xsi:type="core:ViewContainer" id="_aP3XACHHEfCUwrA_8qrwnA" name="CartPage">
         <annotations text="/cart"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_lbmAEDf2EfCZIep-LL2scw" name="Checkout">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_st3T0Df2EfCZIep-LL2scw"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_6zbq4Df3EfCZIep-LL2scw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_x5q54CHHEfCUwrA_8qrwnA" name="ListRow CartItem">
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_T2a28DfnEfCoFswjVWvzeg" name="Checkout">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_c2-4gDfnEfCoFswjVWvzeg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1"/>
-          </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_jTlWECHOEfC7j5ziKZetqQ" name="Data Binding" uniformResourceIdentifier="call/cartitem/list">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_txk-8CHOEfC7j5ziKZetqQ" name="Quantity">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_txk-8CHOEfC7j5ziKZetqQ" name="Qty">
               <featureConcept href="booking.core#//@domainModel/@domainElements.57"/>
             </subViewComponentParts>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_9QBC4CHOEfC7j5ziKZetqQ" name="Start Date">
@@ -26,12 +28,12 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-    </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="core:IFMLAction" id="_3_iq8CHSEfCBpoLhrKFUVw" name="Save Order" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-      <annotations text="POST"/>
-      <actionEvents id="_qEKDQCHUEfCBpoLhrKFUVw">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_tQus8CHUEfCBpoLhrKFUVw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0"/>
-      </actionEvents>
+      <actions id="_0yW5QDf3EfCZIep-LL2scw" name="checkout cartitem" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
+        <annotations text="POST"/>
+        <actionEvents id="_HLcwcDf4EfCZIep-LL2scw" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_K896QDf4EfCZIep-LL2scw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </actionEvents>
+      </actions>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_7IrO0SHBEfCE750xnd-W-Q">
