@@ -71,6 +71,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_vThpoD34EfCERJJinWWpCA" name="CartBookingEvent">
+      <annotations text="Cart Booking Event"/>
+      <viewElementEvents id="_y9A40D34EfCERJJinWWpCA" name="CartBookingEvent">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_rIwc5z35EfCERJJinWWpCA">
+          <targetInteractionFlowElement xsi:type="dop-extension:ModifiedViewContainer" href="cartbookingevent.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_pv07cSD3EfCf3YcdppMP9A">
     <domainElements xsi:type="core:UMLDomainConcept" id="_pv6bACD3EfCf3YcdppMP9A" name="CustomerImpl">
