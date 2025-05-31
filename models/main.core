@@ -50,7 +50,7 @@
         <annotations text="Booking Event"/>
         <viewElementEvents id="_pH_z-DGhEfCVp7pu0Q51LQ" name="BookingEvent">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_r9YFpzGhEfCVp7pu0Q51LQ">
-            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="bookingevent.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+            <targetInteractionFlowElement xsi:type="core:ViewContainer" href="bookingevent.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
           </outInteractionFlows>
         </viewElementEvents>
       </viewElements>
