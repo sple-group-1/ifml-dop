@@ -7,7 +7,6 @@
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@actionEvents.0/@outInteractionFlows.0"/>
         <viewElementEvents id="_lbmAEDf2EfCZIep-LL2scw" name="Checkout">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_st3T0Df2EfCZIep-LL2scw"/>
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_6zbq4Df3EfCZIep-LL2scw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_x5q54CHHEfCUwrA_8qrwnA" name="ListRow CartItem">
@@ -28,7 +27,7 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <actions id="_0yW5QDf3EfCZIep-LL2scw" name="checkout cartitem" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
+      <actions id="_0yW5QDf3EfCZIep-LL2scw" name="checkout cartitem" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_HLcwcDf4EfCZIep-LL2scw" name="then">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_K896QDf4EfCZIep-LL2scw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
